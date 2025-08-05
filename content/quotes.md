@@ -29,6 +29,8 @@ template = "quotes.html"
 
 > Eternity is not an everlasting flux of time, but time is a short parenthesis in a long period, and eternity had been the same as it is, though time had never been. - [John Donne, Devotions](https://en.wikipedia.org/wiki/Devotions_upon_Emergent_Occasions)
 
+> I am not an American. I am *the* American. - Mark Twain
+
 # practice
 
 > The joy of practicing leads you to the celebration of the creation. - [Cecil Taylor](https://www.youtube.com/watch?v=rNXvQaBEByg)
