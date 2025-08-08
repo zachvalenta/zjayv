@@ -2,9 +2,6 @@
 
 {% block content %}
 
-<h1 class="title"> {{ page.title }} </h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-
 {% if page.toc %}
 <div class="content-with-toc">
     <aside class="toc-sidebar">
@@ -36,10 +33,14 @@
         </ul>
     </aside>
     <main class="main-content">
+        <h1 class="title"> {{ page.title }} </h1>
+        <p class="subtitle"><strong>{{ page.date }}</strong></p>
         {{ page.content | safe }}
     </main>
 </div>
 {% else %}
+<h1 class="title"> {{ page.title }} </h1>
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
 {{ page.content | safe }}
 {% endif %}
 
