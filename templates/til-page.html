@@ -4,6 +4,10 @@
 
 {% if page.toc %}
 <div class="content-with-toc">
+    <div class="article-header">
+        <h1 class="title"> {{ page.title }} </h1>
+        <p class="subtitle"><strong>{{ page.date }}</strong></p>
+    </div>
     <aside class="toc-sidebar">
         <h2>Table of Contents</h2>
         <ul>
@@ -33,8 +37,6 @@
         </ul>
     </aside>
     <main class="main-content">
-        <h1 class="title"> {{ page.title }} </h1>
-        <p class="subtitle"><strong>{{ page.date }}</strong></p>
         {{ page.content | safe }}
     </main>
 </div>
