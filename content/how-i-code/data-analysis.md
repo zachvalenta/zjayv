@@ -5,6 +5,18 @@ date = 2025-06-24
 
 💻 https://github.com/zachvalenta/query-sandbox
 
+VISIDATA
+* grabbing subset of records
+* figuring out what columns matter
+
+CLI
+* dbcli: snippets
+* duckdb: agg
+
+TERMINAL
+* Polars
+* uniplot for viz
+
 # TOOLING
 
 ## GUI
