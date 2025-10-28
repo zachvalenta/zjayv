@@ -31,7 +31,23 @@ template = "cv.html"
 
 ## experience
 
+### Kero Sports
+
+🗓️ 2025.10-present
+
+---
+
+* Sentry
+* Mongo, Postgres
+* Kafka
+
 ### Capp
+
+🗓️ 2024.08-2025.04
+
+* __project__: ERP
+* __role__: data eng
+* __contribution__: set up EDI connection for suppliers, wrote product category tooling, modernized price updates (Polars, sqlite-utils, visidata)
 
 ### United Masters
 
