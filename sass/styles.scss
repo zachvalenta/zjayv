@@ -1,3 +1,52 @@
+// Font face declarations
+@font-face {
+    font-family: 'Recursive';
+    src: url('/fonts/RecursiveLinear-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recursive';
+    src: url('/fonts/RecursiveLinear-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recursive';
+    src: url('/fonts/RecursiveLinear-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMonoNLNerdFont-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMonoNLNerdFont-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMonoNLNerdFont-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 // Color palette
 $primary-color: #2563eb;
 $secondary-color: #64748b;
@@ -10,7 +59,8 @@ $border-light: #e2e8f0;
 $hover-bg: #f1f5f9;
 
 // Typography
-$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+$font-primary: 'Recursive', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+$font-mono: 'JetBrains Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 $font-serif: 'Georgia', 'Times New Roman', serif;
 
 .one:hover { background-color: violet }
@@ -234,7 +284,7 @@ blockquote {
         padding: 0.125rem 0.25rem;
         border-radius: 0.25rem;
         font-size: 0.875em;
-        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-family: $font-mono;
     }
 
     pre {
