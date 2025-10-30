@@ -3,6 +3,9 @@ title = "impact of AI on software development"
 date = 2025-10-27
 +++
 
+
+continue import from `models.md > software dev`
+
 # writing
 
 ---
