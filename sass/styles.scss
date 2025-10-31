@@ -1,24 +1,16 @@
 // Font face declarations
 @font-face {
-    font-family: 'Recursive';
-    src: url('/fonts/RecursiveLinear-Regular.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Karla';
+    src: url('/fonts/Karla-Regular.ttf') format('truetype');
+    font-weight: 200 800;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Recursive';
-    src: url('/fonts/RecursiveLinear-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Recursive';
-    src: url('/fonts/RecursiveLinear-Italic.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Karla';
+    src: url('/fonts/Karla-Italic.ttf') format('truetype');
+    font-weight: 200 800;
     font-style: italic;
     font-display: swap;
 }
@@ -48,18 +40,18 @@
 }
 
 // Color palette
-$primary-color: #2563eb;
+$primary-color: #800000;
 $secondary-color: #64748b;
-$accent-color: #0ea5e9;
+$accent-color: #a00000;
 $text-dark: #1e293b;
 $text-light: #475569;
-$bg-light: #f8fafc;
+$bg-light: #f8f8f8;
 $bg-white: #ffffff;
 $border-light: #e2e8f0;
 $hover-bg: #f1f5f9;
 
 // Typography
-$font-primary: 'Recursive', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+$font-primary: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 $font-mono: 'JetBrains Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 $font-serif: 'Georgia', 'Times New Roman', serif;
 
