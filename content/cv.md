@@ -42,6 +42,7 @@ DATA
 
 ---
 
+https://github.com/lusingander/serie/issues/53
 * __technical writer__: Stack Overflow ([threads vs. processes](https://stackoverflow.com/a/47824267), [debugging](https://stackoverflow.com/a/61151333), [Docker Compose inheritance](https://stackoverflow.com/a/63585954)), [technical article](https://github.com/zachvalenta/nginx-wsgi) covered by [Python Bytes podcast](https://pythonbytes.fm/episodes/show/120/aws-mongodb-and-the-economic-realities-of-open-source-and-more)
 * __code contributor__: [The Hitchhiker's Guide to Python](https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=bookforkind-20&linkId=804806ebdacaf3b56567347f3afbdbca) (PRs on [loguru](https://github.com/realpython/python-guide/pull/993), [Clint](https://github.com/realpython/python-guide/pull/970)), various ([Portray](https://github.com/timothycrosley/portray/blob/master/docs/contributing/4.-acknowledgements.md), [CPython](https://github.com/python/cpython/pull/14538), [ptpython](https://github.com/prompt-toolkit/ptpython/issues/304), [bandit](https://github.com/PyCQA/bandit/issues/471), [fff](https://github.com/dylanaraps/fff/pull/116))
 
@@ -53,9 +54,41 @@ DATA
 
 ---
 
+### pregame resolution
+
+https://bitbucket.org/kerogaming/rush_ml_v2/pull-requests/4844
+* lookup error happens (per Sentry) on market_info.get("form_actionNumber")
+* nothing has changed in the code around this LOC for 2+ years
+* which makes me think this is a data issue, not a code issue
+* all the issues seem to be with pre-game markets
+* pregame markets don't have PBP data
+* pregame markets can (will occasionally? always? never?) have null actionNumber
+* when the game starts, we attempt to resolve all markets, incl. pregame
+* if pregame markets lack actionNumber, they can't resolve
+* so why is this only happening for *select* pregame markets (e.g. P_4_23_5, P_4_29_4)?
+* we seemingly handle pregame market state mgmt via get_pregame_publish_market, which *should* be picking up P_4_23_5, P_4_29_4, and so forth
+* these markets have ownership of their own unpublish logic (unlike other pregame markets?? "There should be one - and preferably only one - obvious way to do it.")
+```python
+class P_4_23_5(v.TeamNextOffensivePossessionResult):
+    ...
+    @classmethod
+    def resolve_market(cls, event_info, market, last_row, con: BasketballRmgWorkDB):
+        ...
+        if last_row.get(
+            "@matchstatus"
+        ) != BetRadarMatchStatus.NOT_STARTED and not market.get("unpublished"):
+            res = ResolveOption.UNPUBLISH
+```
+* so the issue could be that when we try to resolve them via BasketballRmgResolving.run(), we're trying to lookup form_actionNumber before their own internal unpublish mechanism resolve_market gets called, which means we'll hit this lookup error, which means we'll never resolve them.
+* Ok, so here's a *potential* fix for this https://bitbucket.org/kerogaming/rush_ml_v2/branch/fix/basketball/pregame-unpublish-temp-fix?dest=feat_common_service
+* The fix looks idiotically simple, I know, but think it will handle these deviant markets for now. Mid/long-term we should align them with their fellow pregame markets and move ownership of their resolution outside of themselves.
+
+### stack
+
+* FastAPI
 * Sentry
 * Mongo, Postgres
-* Kafka
+* Kafka, ARQ
 
 ## 🟥 Capp
 
