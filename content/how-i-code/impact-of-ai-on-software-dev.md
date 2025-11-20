@@ -3,8 +3,61 @@ title = "impact of AI on software development"
 date = 2025-10-27
 +++
 
+🗄️
+* `eng/doc.md`
+* `linguistics.md` determinism
+* `media.md` print culture
 
-continue import from `models.md > software dev`
+# 🚧 dump from `agentic.md`
+
+* non-local experiments (avoid pkg installs, etc.) https://simonwillison.net/2025/Nov/6/async-code-research/
+
+---
+
+> If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
+new languages https://simonwillison.net/2025/Nov/7/llms-for-new-programming-languages/
+* https://news.ycombinator.com/item?id=44322465 https://news.ycombinator.com/item?id=44315505
+* https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/
+https://simonwillison.net/2025/Oct/11/vibing-a-non-trivial-ghostty-feature/
+https://simonwillison.net/2025/Oct/10/superpowers/
+* https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md
+* METR study, actually not effective? https://www.astralcodexten.com/p/links-for-september-2025
+* https://www.scattered-thoughts.net/writing/everyones-got-one/
+* https://blog.florianherrengt.com/vibe-coder-career-path.html
+* garbage in garbage out
+> OpenAI published a very long guide to ‘prompt engineering’ for GPT-4.1. I find this kind of stuff unintentionally hilarious: if your thesis is that these models are replacing software, why do I need to memorise incantations and learn what JSON means to get the best results? All of this should be abstracted away. - Ben Evans 25.05.20
+* https://simonwillison.net/2025/Apr/20/ethan-mollick/
+* https://news.ycombinator.com/item?id=43752492
+* teaching people how to ask better questions https://paulgraham.com/writes.html
+> PG might be right for most people but I estimate that LLMs will actually make their users *better* at writing clearly. Will take the Stack Overflow ethos to a wider audience. https://stackoverflow.com/help/how-to-ask
+* Stack Overflow won in losing https://x.com/Altimor/status/1853893158368928124
+* Cursor files https://getstream.io/blog/cursor-ai-large-projects/
+* docs https://news.ycombinator.com/item?id=45884169
+* autocomplete is not the reason https://www.arguingwithalgorithms.com/posts/cursor-review.html https://ghuntley.com/stdlib/
+> learn how to fucking type (and how to write https://news.ycombinator.com/item?id=43739400)
+* writing https://johnstone.substack.com/p/friction-was-the-feature
+> Harper on An LLM Codegen Hero's Journey: "Writing skills have become critical. While we’ve always valued strong communicators on tech teams for documentation and collaboration, it’s doubly important now." One hundred thousand percent correct, I’d say. This week I gave a little talk on how to write better prompts when using Amp and I had a slide in there that said: what makes a good prompt are the same things that make a good ticket and good bug report
+> have standards 💡️ use AI to write docs and understand the entire architecture of the system https://www.driver.ai/
+* `.cursor/rules`/`.cursorrules` https://www.nickcraux.com/blog/cursor-tip https://news.ycombinator.com/item?id=43341506 https://docs.cursor.com/context/rules-for-ai https://news.ycombinator.com/item?id=43658923
+> Eng leadership at my place are pushing Cursor pretty hard. It's great for banging out small tickets and improving the product incrementally kaizen-style, but it falls down with anything heavy. I think it's weakening junior engineers' reasoning and coding abilities as they become reliant on it without having lived for long, or at all, in the before times. I think may be doing the same to me too...As with so many products, it's cheap to start with, you become dependent on it, then one day it's not cheap and you're fucked.
+* what I use it for (beyond code): summarization, taxonomization, big picture, learning new concepts (regression, dimensional analysis) https://github.com/zachvalenta/apple-models-data-analysis
+> that little repo took me ~30 minutes total work, spanning initial idea to completion. that * ideas in a day * days in a year has been a massive delta for me. ++ I feel like my ability to use AI tooling well growing exponentially. diff btw today vs. a month ago night and day.
+* misunderstanding https://www.youtube.com/watch?v=dkV01hBdhZE https://registerspill.thorstenball.com/p/they-all-use-it https://news.ycombinator.com/item?id=41930767
+makes mistakes all the time but that's why we're here! re: `direnv` https://chatgpt.com/c/673f8c16-e090-8004-bdc8-564bbfeb33d5
+> The crux of my raging hatred is not that I hate LLMs or the generative AI craze. I had my fun with Copilot before I decided that it was making me stupider - it's impressive, but not actually suitable for anything more than churning out boilerplate. Nothing wrong with that, but it did not end up being the crazy productivity booster that I thought it would be, because programming is designing and these tools aren't good enough (yet) to assist me with this seriously. https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/
+> LLMs are good at explaining code. Give it code in a language you don't understand and it will explain it with 90% accuracy. https://katherinemichel.github.io/portfolio/pycon-us-2024-recap.html#simon-willison-keynote
+https://www.youtube.com/watch?v=ImNpR0O8nuA
+https://marginalrevolution.com/marginalrevolution/2025/02/o1-pro.html
+forcing people to think through things https://x.com/RealGeneKim/status/1853860996689064211
+https://registerspill.thorstenball.com/p/surely-not-all-codes-worth-it https://registerspill.thorstenball.com/p/how-might-ai-change-programming
+sketching https://simonwillison.net/2024/Dec/4/steve-yegge/
+https://x.com/barbell_fi
+https://simonwillison.net/2023/Dec/31/ai-in-2023/
+https://simonwillison.net/2024/Dec/11/who-and-what-comprise-ai-skepticism/#atom-everything
+https://simonwillison.net/2024/Dec/10/ethan-mollick/
+* https://simonwillison.net/2025/Apr/7/john-carmack/
+* https://www.thoughtworks.com/radar/techniques/observability-2-0 https://claude.ai/chat/6bcfcae0-6294-47ef-a3bf-588a7f178c0e
+* https://crawshaw.io/blog/programming-with-llms
 
 # writing
 
