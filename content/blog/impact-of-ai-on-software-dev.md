@@ -14,6 +14,7 @@ date = 2025-10-27
 
 ---
 
+* woodchipper https://simonwillison.net/2025/Mar/9/steve-yegge/
 > If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 new languages https://simonwillison.net/2025/Nov/7/llms-for-new-programming-languages/
 * https://news.ycombinator.com/item?id=44322465 https://news.ycombinator.com/item?id=44315505
@@ -75,6 +76,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 ---
 
+> I believe the next year will show that the role of the traditional software engineer is dead. If you got into this career because you love writing lines of code, I have some bad news for you: it’s over. The machines will be writing most of the code from here on out. Although there is some artisanal stuff that will remain in the realm of hand written code, it will be deeply in the minority of what gets produced. https://registerspill.thorstenball.com/p/joy-and-curiosity-63
 > 90% of my skills just went to zero dollars and 10% of my skills just went up 1000x. - Kent Beck https://simonwillison.net/2025/Jun/22/kent-beck/
 * https://news.ycombinator.com/item?id=42336553
 * ADRs / Stack Overflow won https://harper.blog/2025/04/17/an-llm-codegen-heros-journey/ https://registerspill.thorstenball.com/p/joy-and-curiosity-36 https://mathstodon.xyz/@tao/110601051375142142

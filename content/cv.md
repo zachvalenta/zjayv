@@ -5,6 +5,8 @@ template = "cv.html"
 
 ---
 
+https://gaultier.github.io/blog/body_of_work.html
+
 # ME
 
 ## profile
