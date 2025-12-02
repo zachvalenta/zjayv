@@ -6,6 +6,25 @@ date = 2025-11-25
 * agent: Claude Code
 * `docs/` > `CLAUDE.md`
 * vim readline, multi-line: `/terminal-setup`
+
+# what I'm looking for in an AI agent
+
+REQUIREMENTS
+* read user-configured docs on startup / without prompting
+* use user-configured tools to connect and read from db
+* doesn't prompt me for perms all the time; either default or allow user to config such that agent will just read/edit files and run typical bash commands (cat, ls, etc.) without asking for perms
+
+Seems like it should be fairly straight forward. Surprised that Claude Code - supposedly best in class - is not cutting it.
+
+Other agents I know about:
+
+* Crush
+* Codex
+* Gemini
+* OpenCode
+
+Tell me how each would accomplish my requirements.
+
 # gimme the data!
 
 🔗 https://chatgpt.com/c/691a3e15-e294-8333-83b3-d6cddee0b93e

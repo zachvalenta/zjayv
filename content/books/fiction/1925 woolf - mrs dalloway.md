@@ -4,6 +4,8 @@ title = "1925 Woolf - Mrs Dalloway"
 
 ---
 
+https://marginalrevolution.com/marginalrevolution/2025/11/what-ive-been-reading-280.html
+
 ## tldr
 
 A stream-of-consciousness day in London between world wars. One of those books where nothing happens but it feels like all of life is considered.
