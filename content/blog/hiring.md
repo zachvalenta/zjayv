@@ -7,6 +7,10 @@ date = 2024-09-22
 
 > [Tech industry hiring processes are folkloric and irrational](https://news.ycombinator.com/item?id=7260087 )
 
+AMAZING
+* https://www.enveritas.org/jobs/backend-software-eng/#10d7adef8us
+* https://www.workatastartup.com/jobs/84039
+
 https://news.ycombinator.com/item?id=43145489
 https://news.ycombinator.com/item?id=43125402
 > It's been 10 years since I did an interview and I think I would rather retire and grow rare lizards than jump through the interview hoops at a new company. I am 90% sure I couldn't pass the interview for my current position but I'm the one who designed the whole thing. -staff level backend engineer https://news.ycombinator.com/item?id=45110466

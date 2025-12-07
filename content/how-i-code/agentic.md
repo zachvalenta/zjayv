@@ -7,6 +7,13 @@ date = 2025-11-25
 * `docs/` > `CLAUDE.md`
 * vim readline, multi-line: `/terminal-setup`
 
+# current setup
+
+WIRING
+* db: slash commands symlinked to `$PROJECT/.claude/commands`
+* docs: point to from `CLAUDE.md` https://github.com/zachvalenta/dotfiles-mini23/commit/33a4b64da3a67231887bfb17ff48c0e7451b7cd4
+* file access: ``/Users/zach/Documents/zv/work/kero/**` | just point! https://code.claude.com/docs/en/common-workflows#reference-files-and-directories
+
 # what I'm looking for in an AI agent
 
 REQUIREMENTS

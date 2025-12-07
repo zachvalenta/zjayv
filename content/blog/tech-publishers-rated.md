@@ -48,6 +48,7 @@ LIVEBOOK
 
 ## O'Reilly
 
+* https://news.ycombinator.com/item?id=46194063
 * DRM dark side (used to be free...) https://github.com/AlisdairO/pgexercises/pull/50/files
 * editing: Flask Web Dev, SQLAlchemy (Grinberg seems like a good guy, btw)
 * no line numbers (other guys do this)
