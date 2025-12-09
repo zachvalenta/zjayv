@@ -122,3 +122,4 @@ https://news.ycombinator.com/item?id=46080498
 
 https://simonwillison.net/2024/Dec/31/llms-in-2024/#knowledge-is-incredibly-unevenly-distributed
 writing an algebra book https://x.com/robertghrist/status/1874105564051234951
+https://news.ycombinator.com/item?id=46196228
