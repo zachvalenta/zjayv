@@ -120,6 +120,7 @@ https://news.ycombinator.com/item?id=46080498
 
 # people are still not using it
 
-https://simonwillison.net/2024/Dec/31/llms-in-2024/#knowledge-is-incredibly-unevenly-distributed
-writing an algebra book https://x.com/robertghrist/status/1874105564051234951
-https://news.ycombinator.com/item?id=46196228
+* pro https://martinalderson.com/posts/has-the-cost-of-software-just-dropped-90-percent/ https://news.ycombinator.com/item?id=46196228
+* con https://andyljones.com/posts/horses.html https://news.ycombinator.com/item?id=46199723 pro https://news.ycombinator.com/item?id=46200455
+* https://simonwillison.net/2024/Dec/31/llms-in-2024/#knowledge-is-incredibly-unevenly-distributed
+* writing an algebra book https://x.com/robertghrist/status/1874105564051234951
