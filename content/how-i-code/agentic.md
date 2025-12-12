@@ -9,6 +9,12 @@ date = 2025-11-25
 
 # current setup
 
+THINGS THAT MATTER
+* model
+* thinking mode
+* perms
+* context
+
 WIRING
 * db: slash commands symlinked to `$PROJECT/.claude/commands`
 * docs: point to from `CLAUDE.md` https://github.com/zachvalenta/dotfiles-mini23/commit/33a4b64da3a67231887bfb17ff48c0e7451b7cd4
