@@ -78,6 +78,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 ---
 
+* https://news.ycombinator.com/item?id=46197930
 > I believe the next year will show that the role of the traditional software engineer is dead. If you got into this career because you love writing lines of code, I have some bad news for you: it’s over. The machines will be writing most of the code from here on out. Although there is some artisanal stuff that will remain in the realm of hand written code, it will be deeply in the minority of what gets produced. https://registerspill.thorstenball.com/p/joy-and-curiosity-63
 > 90% of my skills just went to zero dollars and 10% of my skills just went up 1000x. - Kent Beck https://simonwillison.net/2025/Jun/22/kent-beck/
 * https://news.ycombinator.com/item?id=42336553
@@ -123,4 +124,6 @@ https://news.ycombinator.com/item?id=46080498
 * pro https://martinalderson.com/posts/has-the-cost-of-software-just-dropped-90-percent/ https://news.ycombinator.com/item?id=46196228
 * con https://andyljones.com/posts/horses.html https://news.ycombinator.com/item?id=46199723 pro https://news.ycombinator.com/item?id=46200455
 * https://simonwillison.net/2024/Dec/31/llms-in-2024/#knowledge-is-incredibly-unevenly-distributed
+* https://news.ycombinator.com/item?id=46207505
+* https://news.ycombinator.com/item?id=46227422
 * writing an algebra book https://x.com/robertghrist/status/1874105564051234951
