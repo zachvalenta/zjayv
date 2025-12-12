@@ -10,6 +10,25 @@ date = 2024-09-22
 AMAZING
 * https://www.enveritas.org/jobs/backend-software-eng/#10d7adef8us
 * https://www.workatastartup.com/jobs/84039
+* https://val-town.notion.site/product-engineer https://linear.app/now/why-and-how-we-do-work-trials-at-linear
+```txt
+We’re a small, Brooklyn-based team that ships quickly with high-trust:
+
+- **Rhythm**: Light daily stand-up, then deep solo focus. We pair or whiteboard whenever it’s useful, and we all grab lunch together most days.
+- **Culture**: Flat and collaborative — decisions are made by the person closest to the problem or most excited to solve it, not by hierarchy.
+- **Process**: We plan lightly, message on Discord, write thoughtful GitHub issues, and document what we build so teammates can move fast.
+- **Values**: High-integrity, friendly, and curious. We care about each other and about creating tools that make programming joyful — not about chasing hype.
+- **Fun**: We love shipping improvements big and small every day to delight our users.
+
+Interview process:
+
+1. Chat with one of our founders (30 min)
+2. Half-day onsite to chat with other team members (3× 45 min)
+3. Paid [work trial](https://linear.app/blog/why-and-how-we-do-work-trials-at-linear) in our Brooklyn office (2 – 5 days)
+4. We work together 🥳
+```
+
+### Benefits
 
 https://news.ycombinator.com/item?id=46162182
 https://news.ycombinator.com/item?id=43145489
