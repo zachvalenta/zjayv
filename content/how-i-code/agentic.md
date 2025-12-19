@@ -9,6 +9,18 @@ date = 2025-11-25
 
 # current setup
 
+```sh
+$ pwd
+/Users/zach/Documents/zv/work/kero/src/automation/rush/.claude
+
+$ t
+
+ .
+├──  CLAUDE.md -> /Users/zach/Documents/denv/dotfiles/ai/claude/kero.md
+├──  commands -> ../../../../docs/agentic/commands
+└──  settings.json -> /Users/zach/Documents/denv/dotfiles/ai/claude/settings.json
+```
+
 THINGS THAT MATTER
 * model
 * thinking mode

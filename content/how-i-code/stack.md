@@ -5,8 +5,8 @@ date = 2025-12-25
 
 # LANGUAGES
 
-* services: Golang | Rust
-* business logic: Python
+* business: Python
+* services: Golang
 
 # FRAMEWORKS
 
