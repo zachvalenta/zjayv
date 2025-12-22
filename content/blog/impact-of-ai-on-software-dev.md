@@ -118,6 +118,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 # you still need to know things
 
+* layman unleashes on his laptop https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code https://www.reddit.com/r/ClaudeCode/comments/1prn6nd/comment/nv3dc9i/
 https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
 
