@@ -118,6 +118,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 # you still need to know things
 
+* purity tests https://news.ycombinator.com/item?id=46365239
 * layman unleashes on his laptop https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code https://www.reddit.com/r/ClaudeCode/comments/1prn6nd/comment/nv3dc9i/
 https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
@@ -132,6 +133,7 @@ https://news.ycombinator.com/item?id=46268959
 
 > I fell into an agentic coding hole earlier this year and I still haven't recovered from it. https://www.youtube.com/watch?v=tt3kY19ciFA
 
+* https://blog.kierangill.xyz/oversight-and-guidance
 * leave it to Kent to see it https://simonwillison.net/2025/Dec/16/kent-beck/
 * even the power users are still dim! https://news.ycombinator.com/item?id=46255285
 * https://lucumr.pocoo.org/2025/9/29/90-percent/

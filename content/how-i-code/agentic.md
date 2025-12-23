@@ -7,6 +7,88 @@ date = 2025-11-25
 * `docs/` > `CLAUDE.md`
 * vim readline, multi-line: `/terminal-setup`
 
+# for bookcase/domains/sw
+
+## context
+
+ok, here's how I'm doing config for CC rn
+
+* `/Users/zach/Documents/denv/dotfiles/ai/claude`
+
+So for some work projects:
+
+* `/Users/zach/Documents/zv/work/kero/src/automation/rush`
+* `/Users/zach/Documents/zv/work/kero/docs/agentic`
+
+they point to `kero.md`. Main config from `/Users/zach/.claude` points to `user.md`
+
+But then I got to thinking: I'm one of those crazy Zettelkasten people. Not *exactly* what he describes here, but something along those lines. https://notes.andymatuschak.org/Evergreen_notes
+
+Anyhow, my thinking, given that I have a ton of notes (`/Users/zach/Documents/zv/notes`), why don't I:
+
+* get Claude to write context files for my bookcase, domains, and sw notes and put them here `/Users/zach/Documents/denv/dotfiles/ai/claude/context/notes`
+* write some slash comands (`/Users/zach/Documents/denv/dotfiles/ai/claude/commands`) so I can put these contexts to use when I'm working w/ CC
+
+## use cases
+
+To that last point, two things I was thinking about today that could be helped by all this:
+
+* I'm trying to redesign my personal site. `site.md` is about SSGs, but also has a bunch of design stuff in their. I have `frontend.md`, CSS stuff there. And then `design.md` more broadly. So I struggling to articulate what I wanted to do w/ my site and thought "hey, I need to learn the semantics of visual/graphic design". Be nice if I could port what I was learning in my conversation with Claude back to my notes.
+* You'll notice that `bookcase` kinda sorta rhymes w/ a bibliography mgmt system like Zotero or this TUI version https://cobib.gitlab.io/cobib/cobib.html -> I'd love to make bookcase less of a mess, and it would help a lot if CC knew about my notes and how bookcase fits in.
+
+## worklogs
+
+Anyway, let's proceed as such, pausing btw step for me to review your work:
+
+- [x] context file for bookcase
+- [x] context file for domains
+- [x] context file for sw
+
+## slash command
+
+Ok, here's what I'm thinking in terms of slash commands:
+
+```sh
+├── commands/notes
+│   └── inject-context.md   # pull relevant context note from /Users/zach/Documents/denv/dotfiles/ai/claude/context/notes into context, in order that instead of me manually having to use the @ command, you'll have a much easier/cheaper time figuring out where to look vs. grepping through a ton of files and blowing through a ton of tokens
+│   └── improve-context.md  # super version of Claude's @ command, where - if you're taking the trouble of bringing an entire file into memory, use that to also improve the TOPICS/SEARCH/RELATED tags for the file in the relevant context file @ /Users/zach/Documents/denv/dotfiles/ai/claude/context/notes
+│   └── rf.md  # propose refactoring the filesystem for better taxonomy | making connections | (re)writing sections using the guidelines from /Users/zach/Documents/denv/dotfiles/ai/claude/context/markdown.md
+```
+
+Here's an example of how I imagine this working:
+```sh
+# CC looks at the CWD's project's spec file + uses context to figure out what languages/frameworks I know best and which ones I'm intrigued by -> throws out some suggestions
+/inject-context Hey Claude, I'm trying to think of what the stack should be for $FOO_PROJECT_IN_CWD.
+```
+```sh
+# CC takes the files that it's loaded into memory from /inject-context and uses that to improve the context files
+/improve-context
+```
+```sh
+# CC takes the files that it's loaded into memory from /inject-context and uses that to improve the notes themselves
+/rf
+```
+
+Do you think this makes sense?
+
+If so, which one do you think we should start with?
+
+```sh
+This makes a lot of sense. The flow is:
+
+1. inject-context → smart loader (use index to find relevant notes, load them)
+2. improve-context → feedback loop (after loading files, improve the index)
+3. rf → deeper work (refactor the notes themselves)
+```
+
+re: the rf slash cmd, section C is mixing concerns ++ but that's not the real issue. I don't need your help in conforming to my own sui generis Markdown conventions (the fault is entirely my own!). Rather, Markdown guidance is for *you* when you're using the /rf slash command.
+
+Now, while taxonomy and connections are useful aspects of `rf`, the real goal of `rf` - what should really be happening in section C 'content - as stated is: "CC takes the files that it's loaded into memory from /inject-context and uses that to improve the notes themselves". `rf` is the command that *is* - intentionally - token intensive. Here, I'm asking you to use `inject-context` and then go a step further: figure out where roughly in the notes we should be looking at, *then* dive deeper and read the notes and tell me what I know, what I should know, and what I need to know. *This* is the command where you're going to set me straight on compiler design | Django auth plugins | PLT, etc.
+
+---
+
+- [ ] use slash cmd for site design
+
 # current setup
 
 ```sh
