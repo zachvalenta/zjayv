@@ -7,6 +7,7 @@ date = 2025-12-25
 
 * business: Python
 * services: Golang
+* terminal: Rust core, Lua plugins https://github.com/sxyazi/yazi
 
 # FRAMEWORKS
 

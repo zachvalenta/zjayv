@@ -147,3 +147,7 @@ https://news.ycombinator.com/item?id=46268959
 * https://news.ycombinator.com/item?id=46227422
 * writing an algebra book https://x.com/robertghrist/status/1874105564051234951
 * Armin https://www.youtube.com/watch?v=tt3kY19ciFA
+
+# attribution
+
+* https://github.com/OlaProeis/Ferrite
