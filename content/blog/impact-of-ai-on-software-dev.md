@@ -151,3 +151,4 @@ https://news.ycombinator.com/item?id=46268959
 # attribution
 
 * https://github.com/OlaProeis/Ferrite
+* https://claude.ai/chat/8fa92c03-4e16-4fa8-a36c-c49d251ac426
