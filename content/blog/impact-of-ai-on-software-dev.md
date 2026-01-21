@@ -15,6 +15,25 @@ a is b  # True
 b is a  # True
 ```
 
+```sh
+# msg to Roberto
+
+agentic is getting a lot of hype but deserved IMO.
+
+if you had to make a timeline of things that really changed the profession:
+
+* machine code
+* compiled languages
+* personal computers, Java popularizes garbage collection
+* the internet, high-level languages (Python, visual basic)
+* Stack Overflow
+* agentic
+
+i would have agentic on there.
+
+and maybe the most important to what it means to be a software dev.
+```
+
 # 🚧 dump from `agentic.md`
 
 * non-local experiments (avoid pkg installs, etc.) https://simonwillison.net/2025/Nov/6/async-code-research/
@@ -134,8 +153,9 @@ https://simonwillison.net/2025/Dec/29/jason-gorman/
 https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
 
-# BYO
+# copying
 
+* https://news.ycombinator.com/item?id=46654726
 https://news.ycombinator.com/item?id=46271703
 https://news.ycombinator.com/item?id=46272230
 https://news.ycombinator.com/item?id=46268959
