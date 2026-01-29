@@ -145,6 +145,8 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 # you still need to know things
 
+* https://news.ycombinator.com/item?id=46765774
+* https://simonwillison.net/2026/Jan/24/jasmine-sun/
 > while software development as we know it is dead, software engineering is alive and well https://mike.tech/blog/death-of-software-development
 reality has a surprising amount of detail https://news.ycombinator.com/item?id=46664635
 https://simonwillison.net/2025/Dec/29/jason-gorman/

@@ -3,6 +3,8 @@ title = "layouts"
 date = 2025-12-25
 +++
 
+most powerful things can be much simpler https://news.ycombinator.com/item?id=46781566
+
 # LANGUAGES
 
 * business: Python
