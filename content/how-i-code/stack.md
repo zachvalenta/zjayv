@@ -36,3 +36,4 @@ most powerful things can be much simpler https://news.ycombinator.com/item?id=46
 * editor: Neovim
 * terminal: ghostty
 * multiplex: Zellij
+* task runner: Just

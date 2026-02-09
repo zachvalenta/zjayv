@@ -41,7 +41,6 @@ and maybe the most important to what it means to be a software dev.
 ---
 
 * woodchipper https://simonwillison.net/2025/Mar/9/steve-yegge/
-> If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 new languages https://simonwillison.net/2025/Nov/7/llms-for-new-programming-languages/
 * https://news.ycombinator.com/item?id=44322465 https://news.ycombinator.com/item?id=44315505
 * https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/
@@ -56,7 +55,6 @@ https://simonwillison.net/2025/Oct/10/superpowers/
 * https://simonwillison.net/2025/Apr/20/ethan-mollick/
 * https://news.ycombinator.com/item?id=43752492
 * teaching people how to ask better questions https://paulgraham.com/writes.html
-> PG might be right for most people but I estimate that LLMs will actually make their users *better* at writing clearly. Will take the Stack Overflow ethos to a wider audience. https://stackoverflow.com/help/how-to-ask
 * Stack Overflow won in losing https://x.com/Altimor/status/1853893158368928124
 * Cursor files https://getstream.io/blog/cursor-ai-large-projects/
 * docs https://news.ycombinator.com/item?id=45884169
@@ -99,6 +97,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 * https://simonwillison.net/2025/May/20/after-months-of-coding-with-llms/
 * https://bsky.app/profile/emollick.bsky.social/post/3lp5afidgvc2a
 > https://news.ycombinator.com/item?id=42095434 there's a fair amount of pushback as well. i align with the first comment to this guy. decent amount of pushback seems like: "im a real man, my editor is emacs, i have strong opinions about c99 vs. rust, LLMs are for wimps who write $DYNAMICALLY_TYPED_LANGUAGE_HERE" + people that are bad at writing prompts. essentially, LLMs reward the type of person who could write a good question on Stack Overflow or otherwise teaches them how to do so (if they are willing to learn) https://stackoverflow.com/help/mcve - to Josh/Kurt 24.11.15
+> PG might be right for most people but I estimate that LLMs will actually make their users *better* at writing clearly. Will take the Stack Overflow ethos to a wider audience. https://stackoverflow.com/help/how-to-ask
 
 # architecture
 
@@ -145,6 +144,13 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 # you still need to know things
 
+https://x.com/esrtweet/status/2019779602617376788
+https://x.com/esrtweet/status/2019562859978539342
+
+https://news.ycombinator.com/item?id=46782811
+> The uncomfortable part: if your value was being the person who could grind through tedious work, that's no longer a moat. Orchestration and judgment are what's left. 
+> I've been saying it this whole time; it's not the engineers who need to be concerned with being replaced - it's anyone involved in the busywork cycle. This includes those who do busywork (grinding through tedium) and those who create it (MBAs, without apologies to the author).
+
 * https://news.ycombinator.com/item?id=46850588
 * https://news.ycombinator.com/item?id=46765774
 * https://simonwillison.net/2026/Jan/24/jasmine-sun/
@@ -155,6 +161,7 @@ https://simonwillison.net/2025/Dec/29/jason-gorman/
 * layman unleashes on his laptop https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code https://www.reddit.com/r/ClaudeCode/comments/1prn6nd/comment/nv3dc9i/
 https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
+> If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 
 # bespoke
 
