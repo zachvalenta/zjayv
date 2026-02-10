@@ -163,11 +163,16 @@ https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
 > If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 
+# the thing itself
+
+> the job of a software engineer isn’t to write code, it’s to deliver code that works. https://simonwillison.net/2026/Feb/10/showboat-and-rodney/
+
 # bespoke
 
 https://changelog.com/friends/126
 https://news.ycombinator.com/item?id=46888441
 https://danluu.com/sounds-easy/
+https://simonwillison.net/2026/Feb/7/david-crawshaw/
 
 # copying
 
