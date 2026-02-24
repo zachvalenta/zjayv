@@ -3,6 +3,18 @@ title = "impact of AI on software development"
 date = 2025-10-27
 +++
 
+> Ryan Dahl, creator of Node.js, with another toll of the bell: "This has been said a thousand times before, but allow me to add my own voice: the era of humans writing code is over. Disturbing for those of us who identify as SWEs, but no less true. That's not to say SWEs don't have work to do, but writing syntax directly is not it." https://registerspill.thorstenball.com/p/joy-and-curiosity-71
+
+* the code itself is cattle, not a pet https://x.com/thorstenball/status/2013619012932947993
+* https://news.ycombinator.com/item?id=47050421
+* https://simonwillison.net/2026/Feb/18/typing/
+* https://www.seangoedecke.com/how-does-ai-impact-skill-formation/
+* lol DDD / write things down https://simonwillison.net/2026/Feb/15/cognitive-debt/#atom-everything
+* https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/
+* most people don't want to build anything, MOOC https://www.youtube.com/watch?v=jgLJ5xas2ow
+* https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt
+* https://simonwillison.net/2026/Feb/18/martin-fowler/
+
 🗄️
 * `eng/doc.md`
 * `linguistics.md` determinism
@@ -145,6 +157,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 # you still need to know things
 
+https://news.ycombinator.com/item?id=47001011
 https://news.ycombinator.com/item?id=46759063
 https://x.com/esrtweet/status/2019779602617376788
 https://x.com/esrtweet/status/2019562859978539342
