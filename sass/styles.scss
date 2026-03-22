@@ -166,6 +166,9 @@ blockquote {
     a {
         display: block;
         padding: 0.5rem 0;
+        padding-left: 0.5rem;
+        margin-left: -0.5rem;
+        border-left: 2px solid transparent;
         color: $color-text;
         font-size: 0.875rem;
         text-decoration: none;
@@ -173,6 +176,11 @@ blockquote {
 
         &:hover {
             text-decoration: underline;
+        }
+
+        &.active {
+            border-left-color: $color-text;
+            font-weight: 700;
         }
     }
 }

@@ -19,6 +19,44 @@
       {% block content %} {% endblock %}
     </div>
   </section>
+<script>
+(function() {
+  var sidebar = document.querySelector('.toc-sidebar');
+  if (!sidebar) return;
+
+  var tocLinks = sidebar.querySelectorAll('a[href*="#"]');
+  var headings = Array.from(document.querySelectorAll('.main-content h1[id], .main-content h2[id], .main-content h3[id]'));
+
+  if (!headings.length || !tocLinks.length) return;
+
+  var linkMap = {};
+  tocLinks.forEach(function(link) {
+    var hash = link.getAttribute('href').split('#')[1];
+    if (hash) linkMap[hash] = link;
+  });
+
+  var currentActive = null;
+
+  function setActive(id) {
+    if (id === currentActive) return;
+    currentActive = id;
+    tocLinks.forEach(function(l) { l.classList.remove('active'); });
+    if (id && linkMap[id]) linkMap[id].classList.add('active');
+  }
+
+  function updateActive() {
+    var threshold = window.scrollY + window.innerHeight * 0.25;
+    var activeId = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].offsetTop <= threshold) activeId = headings[i].id;
+    }
+    setActive(activeId);
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+})();
+</script>
 </body>
 
 </html>
