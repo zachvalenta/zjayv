@@ -61,6 +61,8 @@ template = "quotes.html"
 
 > We want to be, honestly, what we are. We like humans. We like people. We think people have great potential, and even if they aren't what they seem, we are happy with them. - [Robin Hanson](https://conversationswithtyler.com/episodes/robin-hanson/)
 
+> There are no rules but you break them at your peril. - Peter Guber
+
 # thinking
 
 > Therefore, when I saw so much nervous apprehension that, if I were permitted to speak -- when I found they were afraid to have me speak -- when I found that they considered my speaking damaging to their cause -- when I found that they appealed from facts and reasonings to mob law -- I said, no man need tell me what the heart and secret counsel of these men are. They tremble and they are afraid. - [Henry Ward Beecher](https://en.wikipedia.org/wiki/Henry_Ward_Beecher)
@@ -77,6 +79,6 @@ template = "quotes.html"
 
 # history
 
-> History teaches us nothing except that something will happen - Lord Dacre
+> History teaches us nothing except that something will happen. - Lord Dacre
 
 > The wrath of God lies sleeping. It was hid a million years before men were and only men have power to wake it. Hell ain't half full. https://en.wikiquote.org/wiki/Blood_Meridian

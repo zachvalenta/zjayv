@@ -168,6 +168,10 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 
 # you still need to know things
 
+> Making coding cheap and easy doesn't change the fact that to make software, you have to spend time thinking about software, and most people would prefer to be thinking about literally anything else. https://x.com/kareem_carr/status/2049116854535262645
+
+https://www.b-list.org/weblog/2026/apr/09/llms/ https://dora.dev/
+https://simonwillison.net/2026/Apr/13/bryan-cantrill/
 https://x.com/naval/status/2024700227111047581 https://www.lennysnewsletter.com/p/marc-andreessen-the-real-ai-boom
 https://news.ycombinator.com/item?id=47001011
 https://news.ycombinator.com/item?id=46759063
@@ -190,8 +194,12 @@ https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
 > If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 
-# flood of idiots
+# flood of idiots / slop
 
+https://simonwillison.net/2026/Apr/30/zig-anti-ai/
+https://x.com/kepano/status/2036792836834947265
+https://github.com/boolean-maybe/tiki
+https://simonwillison.net/2026/Mar/23/neurotica/
 https://simonwillison.net/2026/Mar/17/tim-schilling/
 https://news.ycombinator.com/item?id=47390383
 https://simonwillison.net/2025/Dec/18/code-proven-to-work/
@@ -205,6 +213,11 @@ https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/
 https://registerspill.thorstenball.com/p/joy-and-curiosity-69
 https://wesmckinney.com/blog/mythical-agent-month/
+
+# frontiers
+
+* Lean
+* https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/
 
 # the thing itself
 
@@ -234,6 +247,7 @@ https://simonwillison.net/2026/Feb/7/david-crawshaw/
 
 # copying
 
+https://ryelang.org/blog/posts/cognitive-dark-forest
 * https://news.ycombinator.com/item?id=46654726
 https://news.ycombinator.com/item?id=46271703
 https://news.ycombinator.com/item?id=46272230
@@ -265,6 +279,8 @@ https://news.ycombinator.com/item?id=47300772
 
 # attribution
 
+* forking https://github.com/ratatui/ratatui-textarea
+* https://news.ycombinator.com/item?id=47514603
 * https://simonwillison.net/2026/Mar/12/malus/ https://malus.sh/
 * https://news.ycombinator.com/item?id=47259177
 * licensing https://news.ycombinator.com/item?id=47257803 https://simonwillison.net/2026/Mar/5/chardet/ https://news.ycombinator.com/item?id=47263048 https://news.ycombinator.com/item?id=47259177
