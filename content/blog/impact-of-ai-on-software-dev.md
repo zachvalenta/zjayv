@@ -154,6 +154,12 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 * good for MVPs https://news.ycombinator.com/item?id=43576813
 * https://simonwillison.net/2025/Mar/6/vibe-coding/ https://simonwillison.net/2025/Mar/19/vibe-coding/ https://www.youtube.com/watch?v=YWwS911iLhg
 
+# one man band
+
+> AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
+
+> CEO, CTO, Programmer, Product Designer, you name it. https://www.linkedin.com/in/evanphoenix/
+
 # 10x
 
 ---
