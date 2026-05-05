@@ -15,6 +15,8 @@ template = "quotes.html"
 
 > "Will you or won't you have it so?" is the most probing question we are ever asked. We answer by consents or nonconsents and not by words. What wonder if the effort demanded by them be the measure of our worth as human beings. - [William James](https://en.wikipedia.org/wiki/The_Principles_of_Psychology)
 
+> He gonna have to block it every time. https://x.com/LegionHoops/status/2051539201490124850
+
 > He that is choice of his time will also be choice of his company, and choice of his actions, lest the first engage him in vanity and loss, and the latter by being criminal, be a throwing his time and himself away, and a going back in the accounts of eternity. - [Jeremy Taylor, The Rule and Exercise of Holy Living](https://en.wikipedia.org/wiki/Holy_Living_and_Holy_Dying)
 
 # influence

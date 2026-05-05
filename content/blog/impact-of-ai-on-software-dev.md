@@ -5,6 +5,9 @@ date = 2025-10-27
 
 # RESTART
 
+https://simonwillison.net/2025/Dec/31/the-year-in-llms/
+* factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
+
 ## one man band
 
 > AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
@@ -133,6 +136,8 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 > All the principles of software engineering are not really about code per se.  They are about how to organize the highly detailed specification of a product. https://x.com/unclebobmartin/status/2022016179943117294
 
+aidr https://news.ycombinator.com/item?id=48113425 https://tropes.fyi/
+
 ---
 
 >  It’s from 2023 and that made me think that today, in 2026, no one would write a blog post like this, because why would you if anyone can press a button to have a custom version of this post generated for them? And that in turn made me wonder: but people will write in the future too and once we’ve crossed through the transitional period we’re in, what will those posts look like? https://registerspill.thorstenball.com/p/joy-and-curiosity-77
@@ -225,6 +230,14 @@ https://news.ycombinator.com/item?id=46080498
 
 ## flood of idiots / slop
 
+https://news.ycombinator.com/item?id=46365105
+psychosis https://x.com/mitchellh/status/2055380239711457578
+
+https://github.com/mvanhorn
+https://github.com/Dicklesworthstone
+Steve Yegge gastown
+
+https://github.com/z-galaxy/zbus/pull/1789
 https://simonwillison.net/2026/Apr/30/zig-anti-ai/
 https://x.com/kepano/status/2036792836834947265
 https://github.com/boolean-maybe/tiki
@@ -236,6 +249,7 @@ https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 ## languages
 
 * Golang, Rust, Haskell https://news.ycombinator.com/item?id=47222270
+* Python https://news.ycombinator.com/item?id=48103303
 
 ## Jevons
 
@@ -270,6 +284,7 @@ https://news.ycombinator.com/item?id=46268959
 
 > I fell into an agentic coding hole earlier this year and I still haven't recovered from it. https://www.youtube.com/watch?v=tt3kY19ciFA
 
+* https://www.seangoedecke.com/ai-makes-weak-engineers-less-harmful/ https://news.ycombinator.com/item?id=48003369
 * https://news.ycombinator.com/item?id=46691243
 * version control needs to change https://lucumr.pocoo.org/2025/12/22/a-year-of-vibes/
 * https://x.com/karpathy/status/2004607146781278521
@@ -289,6 +304,7 @@ https://news.ycombinator.com/item?id=46268959
 
 https://github.com/mitchellh/vouch
 https://news.ycombinator.com/item?id=47300772
+https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
 
 ## attribution
 
