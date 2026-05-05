@@ -3,6 +3,35 @@ title = "impact of AI on software development"
 date = 2025-10-27
 +++
 
+# RESTART
+
+## one man band
+
+> AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
+
+> CEO, CTO, Programmer, Product Designer, you name it. https://www.linkedin.com/in/evanphoenix/
+
+## houseplant programming
+
+https://miren.dev/blog/garden-server
+https://simonwillison.net/2026/Mar/13/craig-mod/
+https://news.ycombinator.com/item?id=47060206
+https://news.ycombinator.com/item?id=47059997
+https://news.ycombinator.com/item?id=46436186
+https://news.ycombinator.com/item?id=46436427
+https://news.ycombinator.com/item?id=46772132
+> Steve Ruiz, founder and CEO of tldraw, with thoughts on AI and open source and why they shut down external contributions to tldraw: stay away from my trash! It’s very thoughtful and interesting (I haven’t looked at open source contributions in a year and have no clue what it’s like to be in the war zone) and I think what he writes here rhymes with my “Is GitHub dead?” video from above: “The question is more fundamental. In a world of AI coding assistants, is code from external contributors actually valuable at all? If writing the code is the easy part, why would I want someone else to write it? […] But if you ask me, the bigger threat to GitHub’s model comes from the rapid devaluation of someone else’s code. When code was hard to write and low-effort work was easy to identify, it was worth the cost to review the good stuff. If code is easy to write and bad work is virtually indistinguishable from good, then the value of external contribution is probably less than zero.” https://registerspill.thorstenball.com/p/joy-and-curiosity-71
+https://changelog.com/friends/126
+https://news.ycombinator.com/item?id=46888441
+https://danluu.com/sounds-easy/
+https://simonwillison.net/2026/Feb/7/david-crawshaw/
+
+> “Clawdbot is a boutique, nerdy project right now, but consider it as an underlying trend going forward: when the major consumer LLMs become smart and intuitive enough to adapt to you on-demand for any given functionality – when you’ll eventually be able to ask Claude or ChatGPT to do or create anything on your computer with no Terminal UI – what will become of ‘apps’ created by professional developers? I especially worry about standalone utility apps: if Clawdbot can create a virtual remote for my LG television (something I did) or give me a personalized report with voice every morning (another cron job I set up) that work exactly the way I want, why should I even bother going to the App Store to look for pre-built solutions made by someone else? What happens to Shortcuts when any ‘automation’ I may want to carefully create is actually just a text message to a digital assistant away?” That’s by Federico Viticci. I think he has programming chops, but I don’t think he’s worked as a software engineer and, well, now he’s also seeing it: a lot of software is going to die in the next few years. Don’t make the mistake and think that there’ll be announcements or funerals. https://registerspill.thorstenball.com/p/joy-and-curiosity-73
+
+# OLD
+
+## more
+
 for the layman https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html
 
 > Ryan Dahl, creator of Node.js, with another toll of the bell: "This has been said a thousand times before, but allow me to add my own voice: the era of humans writing code is over. Disturbing for those of us who identify as SWEs, but no less true. That's not to say SWEs don't have work to do, but writing syntax directly is not it." https://registerspill.thorstenball.com/p/joy-and-curiosity-71
@@ -48,7 +77,7 @@ i would have agentic on there.
 and maybe the most important to what it means to be a software dev.
 ```
 
-# 🚧 dump from `agentic.md`
+## dump from `agentic.md`
 
 * non-local experiments (avoid pkg installs, etc.) https://simonwillison.net/2025/Nov/6/async-code-research/
 
@@ -98,7 +127,7 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 * https://www.thoughtworks.com/radar/techniques/observability-2-0 https://claude.ai/chat/6bcfcae0-6294-47ef-a3bf-588a7f178c0e
 * https://crawshaw.io/blog/programming-with-llms
 
-# writing
+## writing
 
 🗄️ `notes.md` practice
 
@@ -117,11 +146,11 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 > https://news.ycombinator.com/item?id=42095434 there's a fair amount of pushback as well. i align with the first comment to this guy. decent amount of pushback seems like: "im a real man, my editor is emacs, i have strong opinions about c99 vs. rust, LLMs are for wimps who write $DYNAMICALLY_TYPED_LANGUAGE_HERE" + people that are bad at writing prompts. essentially, LLMs reward the type of person who could write a good question on Stack Overflow or otherwise teaches them how to do so (if they are willing to learn) https://stackoverflow.com/help/mcve - to Josh/Kurt 24.11.15
 > PG might be right for most people but I estimate that LLMs will actually make their users *better* at writing clearly. Will take the Stack Overflow ethos to a wider audience. https://stackoverflow.com/help/how-to-ask
 
-# spec > all
+## spec > all
 
 https://simonwillison.net/2026/Feb/25/closed-tests/
 
-# architecture
+## architecture
 
 ---
 
@@ -140,7 +169,7 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 > For starters, non-typists are almost invisible. They don't leave a footprint in our online community...design involves communicating with other people, and design involves a persistent record of the decision tree.
 >"And as for this non-college bullshit I got two words for that: learn to fuckin' type."
 
-# vibe coding
+## vibe coding
 
 ---
 
@@ -154,13 +183,7 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 * good for MVPs https://news.ycombinator.com/item?id=43576813
 * https://simonwillison.net/2025/Mar/6/vibe-coding/ https://simonwillison.net/2025/Mar/19/vibe-coding/ https://www.youtube.com/watch?v=YWwS911iLhg
 
-# one man band
-
-> AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
-
-> CEO, CTO, Programmer, Product Designer, you name it. https://www.linkedin.com/in/evanphoenix/
-
-# 10x
+## 10x
 
 ---
 
@@ -172,7 +195,7 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 > The amount of money flowing through capitalism would astound you. The number and variety of firms participating in the economy would astound you. We don't see most of it every day for the same reason abstractions protect us from having to care about metallurgy while programming. - McKenzie https://twitter.com/patio11/status/936629780719419392
 > AI as a mechanical arm - you still need to know how to hit the ball, but once you do, it'll go a lot further. https://registerspill.thorstenball.com/p/joy-and-curiosity-36
 
-# you still need to know things
+## you still need to know things
 
 > Making coding cheap and easy doesn't change the fact that to make software, you have to spend time thinking about software, and most people would prefer to be thinking about literally anything else. https://x.com/kareem_carr/status/2049116854535262645
 
@@ -200,7 +223,7 @@ https://news.ycombinator.com/item?id=46080498
 > “When thinking about coding with LLMs, think of them as generators of templates. You say what code you need, and an LLM provides you with a template from a collection that most closely resembles the code you needed.” I’ve said something similar in different conversations these past few weeks and that I’ve begun thinking of LLMs-as-code-assistant more in the category of frameworks and generators than magic wands. https://registerspill.thorstenball.com/p/joy-and-curiosity-23
 > If you can make all of those trades, you can use agentic coding tools to produce software not merely faster than before, but better. But to do so, you need to know quite a lot about building good software already. If you've been building software poorly, agentic coding tools are just going to help you do so faster. https://davegriffith.substack.com/p/software-development-in-the-time
 
-# flood of idiots / slop
+## flood of idiots / slop
 
 https://simonwillison.net/2026/Apr/30/zig-anti-ai/
 https://x.com/kepano/status/2036792836834947265
@@ -210,48 +233,32 @@ https://simonwillison.net/2026/Mar/17/tim-schilling/
 https://news.ycombinator.com/item?id=47390383
 https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 
-# languages
+## languages
 
 * Golang, Rust, Haskell https://news.ycombinator.com/item?id=47222270
 
-# Jevons
+## Jevons
 
 https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/
 https://registerspill.thorstenball.com/p/joy-and-curiosity-69
 https://wesmckinney.com/blog/mythical-agent-month/
 
-# frontiers
+## frontiers
 
 * Lean
 * https://simonwillison.net/2026/Apr/3/vulnerability-research-is-cooked/
 
-# the thing itself
+## the thing itself
 
 > the job of a software engineer isn’t to write code, it’s to deliver code that works. https://simonwillison.net/2026/Feb/10/showboat-and-rodney/
 
-# bespoke
-
-https://simonwillison.net/2026/Mar/13/craig-mod/
-https://news.ycombinator.com/item?id=47060206
-https://news.ycombinator.com/item?id=47059997
-https://news.ycombinator.com/item?id=46436186
-https://news.ycombinator.com/item?id=46436427
-https://news.ycombinator.com/item?id=46772132
-> Steve Ruiz, founder and CEO of tldraw, with thoughts on AI and open source and why they shut down external contributions to tldraw: stay away from my trash! It’s very thoughtful and interesting (I haven’t looked at open source contributions in a year and have no clue what it’s like to be in the war zone) and I think what he writes here rhymes with my “Is GitHub dead?” video from above: “The question is more fundamental. In a world of AI coding assistants, is code from external contributors actually valuable at all? If writing the code is the easy part, why would I want someone else to write it? […] But if you ask me, the bigger threat to GitHub’s model comes from the rapid devaluation of someone else’s code. When code was hard to write and low-effort work was easy to identify, it was worth the cost to review the good stuff. If code is easy to write and bad work is virtually indistinguishable from good, then the value of external contribution is probably less than zero.” https://registerspill.thorstenball.com/p/joy-and-curiosity-71
-https://changelog.com/friends/126
-https://news.ycombinator.com/item?id=46888441
-https://danluu.com/sounds-easy/
-https://simonwillison.net/2026/Feb/7/david-crawshaw/
-
-> “Clawdbot is a boutique, nerdy project right now, but consider it as an underlying trend going forward: when the major consumer LLMs become smart and intuitive enough to adapt to you on-demand for any given functionality – when you’ll eventually be able to ask Claude or ChatGPT to do or create anything on your computer with no Terminal UI – what will become of ‘apps’ created by professional developers? I especially worry about standalone utility apps: if Clawdbot can create a virtual remote for my LG television (something I did) or give me a personalized report with voice every morning (another cron job I set up) that work exactly the way I want, why should I even bother going to the App Store to look for pre-built solutions made by someone else? What happens to Shortcuts when any ‘automation’ I may want to carefully create is actually just a text message to a digital assistant away?” That’s by Federico Viticci. I think he has programming chops, but I don’t think he’s worked as a software engineer and, well, now he’s also seeing it: a lot of software is going to die in the next few years. Don’t make the mistake and think that there’ll be announcements or funerals. https://registerspill.thorstenball.com/p/joy-and-curiosity-73
-
-# era
+## era
 
 > An invitation by Nolan Lawson to mourn our craft. “Someday years from now we will look back on the era when we were the last generation to code by hand. We’ll laugh and explain to our grandkids how silly it was that we typed out JavaScript syntax with our fingers. But secretly we’ll miss it.” https://registerspill.thorstenball.com/p/joy-and-curiosity-73
 > Steven Sinofsky, who’s seen quite a few platform and paradigm shifts from up close: “Death of Software. Nah.” He’s saying that “there will be more software than ever before. This is not just because of AI coding or agents building products or whatever. It is because we are nowhere near meeting the demand for what software can do.” And “new tools will be created with AI that do new things.” And also: “Finally, it is absolutely true that some companies will not make it. It is even true that in some very long time, longer than a career or generation, every company will be completely different or their product line and organization will have dramatically changed. This will not broadly happen on any investing timeline.” https://registerspill.thorstenball.com/p/joy-and-curiosity-73
 > Jo Kristian Bergum with some very good thoughts on the future: “few things are worth building.” The value of 10k lines of code is approaching $0, he says, and a lot of things will disappear along with the value these lines once held. “What survives? Systems that compress hard-won insights agents would have to rediscover at enormous token cost. Systems that operate on a cheaper substrate than inference. Systems that solve hard universal problems agents can’t route around easily. Systems built for how agents actually work, not how we wish they worked.” The point about the “cheaper substrate” is something I flip back and forth on. Let’s see how it plays out. https://registerspill.thorstenball.com/p/joy-and-curiosity-73
 
-# copying
+## copying
 
 https://ryelang.org/blog/posts/cognitive-dark-forest
 * https://news.ycombinator.com/item?id=46654726
@@ -259,7 +266,7 @@ https://news.ycombinator.com/item?id=46271703
 https://news.ycombinator.com/item?id=46272230
 https://news.ycombinator.com/item?id=46268959
 
-# people are still not using it
+## people are still not using it
 
 > I fell into an agentic coding hole earlier this year and I still haven't recovered from it. https://www.youtube.com/watch?v=tt3kY19ciFA
 
@@ -278,12 +285,12 @@ https://news.ycombinator.com/item?id=46268959
 * writing an algebra book https://x.com/robertghrist/status/1874105564051234951
 * Armin https://www.youtube.com/watch?v=tt3kY19ciFA
 
-# trust
+## trust
 
 https://github.com/mitchellh/vouch
 https://news.ycombinator.com/item?id=47300772
 
-# attribution
+## attribution
 
 * forking https://github.com/ratatui/ratatui-textarea
 * https://news.ycombinator.com/item?id=47514603
@@ -296,7 +303,7 @@ https://news.ycombinator.com/item?id=47300772
 * https://news.ycombinator.com/item?id=45865886
 * https://simonwillison.net/2026/Jan/11/answers/
 
-# job apocalypse
+## job apocalypse
 
 ⬇️ me to Roberto 26.02.16
 
@@ -313,7 +320,7 @@ on the other hand, if frontier models are better than STEM people at almost any 
 * dev experience: you still need to know a lot to direct the model to build non-trivial things that are reliable enough and you don't waste thousands on tokens
 * an interest! most computer people hate computers, let alone laymen. if agentic makes it much easier to build software...much more software is going to be built. and we're going to need people to build it.
 
-# not a SaaS killer
+## not a SaaS killer
 
 https://news.ycombinator.com/item?id=47024387
 
