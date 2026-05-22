@@ -248,6 +248,7 @@ https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 
 ## languages
 
+* https://simonwillison.net/2026/May/14/mitchell-hashimoto/
 * Golang, Rust, Haskell https://news.ycombinator.com/item?id=47222270
 * Python https://news.ycombinator.com/item?id=48103303
 
