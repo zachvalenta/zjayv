@@ -10,7 +10,7 @@
     </div>
     <aside class="toc-sidebar">
         <h2>Table of Contents</h2>
-        <ul>
+        <ul id="markdown-toc">
         {% for h1 in page.toc %}
             <li>
                 <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
