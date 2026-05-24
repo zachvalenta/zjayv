@@ -1,6 +1,10 @@
 +++
-title = "2011 Fukuyama - Political Order"
-draft = true
+title = "Francis Fukuyama - Political Order"
+
+[taxonomies]
+author = ["Francis Fukuyama"]
+release-year = ["2011"]
+genres = ["non-fiction", "politics"]
 +++
 
 ---
@@ -9,7 +13,7 @@ draft = true
 
 These two books are about political order from 10,000 BC to the present.
 
-Political order = political institutions = the state, rule of law, accountability.
+Political order = the state, rule of law, accountability.
 
 ## why bother reading this book?
 

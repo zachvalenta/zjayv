@@ -8,6 +8,18 @@ date = 2025-10-27
 https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 * factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
 
+## inference costs money
+
+https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut-328
+
+## anti AI contributions
+
+https://github.com/kristoff-it/zine/issues/200
+
+## maintainability
+
+https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/
+
 ## one man band
 
 > AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
@@ -159,6 +171,7 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 
 ---
 
+* https://news.ycombinator.com/item?id=48272984
 * https://simonwillison.net/2026/Mar/12/les-orchard/
 > Ryan Dahl, creator of Node.js, with another toll of the bell: "This has been said a thousand times before, but allow me to add my own voice: the era of humans writing code is over. Disturbing for those of us who identify as SWEs, but no less true. That's not to say SWEs don't have work to do, but writing syntax directly is not it." https://registerspill.thorstenball.com/p/joy-and-curiosity-71
 * https://x.com/goinggodotnet/status/2012209293651501069
@@ -202,6 +215,7 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 
 ## you still need to know things
 
+> The chaos is resolved when the Sorcerer reappears and asserts control over the situation, glaring at the apprentice for his foolishness. This seems like an apt metaphor for the AI era: you want to be a sorcerer and not an apprentice. And a sorcerer has to understand the code. https://htmx.org/essays/code-is-cheap/
 > Making coding cheap and easy doesn't change the fact that to make software, you have to spend time thinking about software, and most people would prefer to be thinking about literally anything else. https://x.com/kareem_carr/status/2049116854535262645
 
 https://www.b-list.org/weblog/2026/apr/09/llms/ https://dora.dev/
@@ -309,6 +323,7 @@ https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
 
 ## attribution
 
+* "fork notice" https://github.com/gotgenes/pi-packages/tree/main/packages/pi-permission-system
 * forking https://github.com/ratatui/ratatui-textarea
 * https://news.ycombinator.com/item?id=47514603
 * https://simonwillison.net/2026/Mar/12/malus/ https://malus.sh/

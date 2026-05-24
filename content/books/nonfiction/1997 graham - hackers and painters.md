@@ -1,5 +1,10 @@
 +++
-title = "1997 Graham - Hackers and Painters"
+title = "Paul Graham - Hackers and Painters"
+
+[taxonomies]
+author = ["Paul Grahama"]
+release-year = ["1997"]
+genres = ["non-fiction", "software", "sociology", "criticism", "business"]
 +++
 
 ---

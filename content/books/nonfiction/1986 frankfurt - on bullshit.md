@@ -1,5 +1,10 @@
 +++
-title = "1986 Frankfurt - On Bullshit"
+title = "Harry Frankfurt - On Bullshit"
+
+[taxonomies]
+author = ["Harry Farnsworth"]
+release-year = ["1986"]
+genres = ["non-fiction", "philosophy"]
 +++
 
 ---

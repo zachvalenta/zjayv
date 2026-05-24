@@ -1,5 +1,10 @@
 +++
-title = "1929 Woolf - A Room of One's Own"
+title = "Virginia Woolf - A Room of One's Own"
+
+[taxonomies]
+author = ["Virginia Woolf"]
+release-year = ["1929"]
+genres = ["non-fiction", "sociology"]
 +++
 
 ---

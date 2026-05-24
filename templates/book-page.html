@@ -6,10 +6,27 @@
 <div class="content-with-toc">
     <div class="article-header">
         <h1 class="title"> {{ page.title }} </h1>
+        {% if page.taxonomies %}
+        <div class="taxonomy-row">
+            {% for author in page.taxonomies.author | default(value=[]) %}
+                <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='author', name=author) }}">{{ author }}</a>
+            {% endfor %}
+            {% for year in page.taxonomies | get(key='release-year', default=[]) %}
+                <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='release-year', name=year) }}">{{ year }}</a>
+            {% endfor %}
+            {% for genre in page.taxonomies.genres | default(value=[]) %}
+                <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='genres', name=genre) }}">{{ genre }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <p class="subtitle">
+            {% if page.date %}noted {{ page.date }}{% endif %}
+            {% if page.updated and page.updated != page.date %} · updated {{ page.updated }}{% endif %}
+        </p>
     </div>
     <aside class="toc-sidebar">
         <h2>Table of Contents</h2>
-        <ul>
+        <ul id="markdown-toc">
         {% for h1 in page.toc %}
             <li>
                 <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
@@ -41,6 +58,23 @@
 </div>
 {% else %}
 <h1 class="title"> {{ page.title }} </h1>
+{% if page.taxonomies %}
+<div class="taxonomy-row">
+    {% for author in page.taxonomies.author | default(value=[]) %}
+        <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='author', name=author) }}">{{ author }}</a>
+    {% endfor %}
+    {% for year in page.taxonomies | get(key='release-year', default=[]) %}
+        <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='release-year', name=year) }}">{{ year }}</a>
+    {% endfor %}
+    {% for genre in page.taxonomies.genres | default(value=[]) %}
+        <a class="taxonomy-tag" href="{{ get_taxonomy_url(kind='genres', name=genre) }}">{{ genre }}</a>
+    {% endfor %}
+</div>
+{% endif %}
+<p class="subtitle">
+    {% if page.date %}noted {{ page.date }}{% endif %}
+    {% if page.updated and page.updated != page.date %} · updated {{ page.updated }}{% endif %}
+</p>
 {{ page.content | safe }}
 {% endif %}
 

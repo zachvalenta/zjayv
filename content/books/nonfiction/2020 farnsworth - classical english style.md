@@ -1,5 +1,12 @@
 +++
-title = "2020 Farnsworth - Classical English Style"
+title = "Ward Farnsworth - Classical English Style"
+date = 2023-12-23
+updated = 2023-12-23
+
+[taxonomies]
+author = ["Ward Farnsworth"]
+release-year = ["2020"]
+genres = ["non-fiction", "writing"]
 +++
 
 ---
@@ -20,17 +27,31 @@ Also, many of the examples come from previous centuries; it's worthwhile to see 
 
 ## moves
 
+### sentence branching
+
 _right-branching sentence_: begins with topic and follows with comment; less work for the reader
 > His family is nothing but bills, dirt, waste, noise, tumbles downstairs, confusion, and wretchedness - qt. Dickens [78]
 
 _left-branching sentence_: begins with comment and follows with topic
 > Therefore, when I saw so much nervous apprehension that, if I were permitted to speak -- when I found they were afraid to have me speak -- when I found that they considered my speaking damaging to their cause -- when I found that they appealed from facts and reasonings to mob law -- I said, no man need tell me what the heart and secret counsel of these men are. They tremble and they are afraid. - qt. Beecher [87]
 
+### repetition
+
 _Homeric simile_: deluge of similes to paint a picture [62]
 > [of the US South] One thinks of the interstellar spaces, of the colossal reaches of the now mythical ether. Nearly the whole of Europe could be lost in that stupendous region of fat farms, shoddy cities and paralyzed cerebrums; one could throw in France, Germany and Italy, and still have room for the British Isles.
 
 _anaphora_: consecutive sentences begun in the same way
 > The manner in which the account opens shows it to be traditionary. It begins abruptly. It is nobody that speaks. It is nobody that hears. It is addressed to nobody. It has neither first, second, nor third person. It has every criterion of being a tradition. It has no voucher. - qt. Paine [70]
+
+### endings
+
+_Saxon finish_: end sentence on Saxon word/phrase; more authoritative
+> Diseases desperate grown / By desperate appliance are relieved, / Or not at all - qt. Shakespeare hamlet 4.3  [23]
+
+_Latinate finish_: end sentence on Latiate word/phrase; feeling of grandeur
+> Yet I'll not shed her blood / Nor scar that whiter skin of hers than snow, / And smooth as monumental alabaster - qt. Shakespeare othello 5.3 [25]
+
+### misc
 
 _isocolon_: clauses similar in length and parallel in structure
 > render therefore unto Caesar the things which are Caesar's / and unto God the things that are God's. - Matthew 22:21 [139]
@@ -40,12 +61,6 @@ _chiasmus_: reversed structure
 
 _anacoluthon_: change grammatical structure mid-sentence
 > Had ye been there – for what could that have done? - qt. Milton lycidas [100]
-
-_Saxon finish_: end sentence on Saxon word/phrase; more authoritative
-> Diseases desperate grown / By desperate appliance are relieved, / Or not at all - qt. Shakespeare hamlet 4.3  [23]
-
-_Latinate finish_: end sentence on Latiate word/phrase; feeling of grandeur
-> Yet I'll not shed her blood / Nor scar that whiter skin of hers than snow, / And smooth as monumental alabaster - qt. Shakespeare othello 5.3 [25]
 
 Latinate words lend themselves to comedy (this mode seems more prominent in British rather than American comedy)
 > I am fully aware of the deep concern felt by the Honorable Member in many matters above his comprehension - qt. Churchill [40]

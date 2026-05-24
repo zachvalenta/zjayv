@@ -1,5 +1,10 @@
 +++
-title = "2021 Freiman - Ignore Politics"
+title = "Christopher Freiman - Ignore Politics"
+
+[taxonomies]
+author = ["Christopher Freiman"]
+release-year = ["2021"]
+genres = ["non-fiction", "politics"]
 +++
 
 ## tldr

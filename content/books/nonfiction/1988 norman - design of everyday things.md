@@ -1,5 +1,10 @@
 +++
-title = "1988 Norman - Design of Everyday Things"
+title = "Don Norman - Design of Everyday Things"
+
+[taxonomies]
+author = ["Don Norman"]
+release-year = ["1988"]
+genres = ["non-fiction", "design"]
 +++
 
 ---

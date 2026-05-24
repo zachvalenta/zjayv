@@ -1,6 +1,11 @@
 +++
-title = "2011 Caplan - Selfish Reasons to Have More Kids"
+title = "Bryan Caplan - Selfish Reasons to Have More Kids"
 draft = true
+
+[taxonomies]
+author = ["Bryan Caplan"]
+release-year = ["2011"]
+genres = ["non-fiction", "sociology"]
 +++
 
 ---
@@ -30,12 +35,3 @@ A few other points:
 * we are spending more time on each kid e.g. mothers spent 10 hrs/wk on children in 1965, 13 hrs/wk in 2000 [20]
 * our values have changed (e.g. greater individualism, divorce no longer taboo) [115]
 * female workforce participation rate doesn't seem to be a reason because present fertility rate (2.0) has increased since the 1970s (1.7), when female workforce participation rate was lower [112]
-
-## links to work through
-
-* https://robertheaton.com/twins/
-* https://www.astralcodexten.com/p/links-for-september-2024
-* https://marginalrevolution.com/marginalrevolution/2011/02/parenting-some-more-anecdotes.html
-* https://twitter.com/RichardHanania/status/1757461210008891658
-* https://en.wikipedia.org/wiki/Free_Press_(publisher) https://en.wikipedia.org/wiki/The_Nurture_Assumption
-* https://twitter.com/cremieuxrecueil/status/1764090986139967835
