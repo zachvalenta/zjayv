@@ -8,6 +8,38 @@ date = 2025-10-27
 https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 * factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
 
+## buy vs. build
+
+https://brandur.org/minimum-viable-unit
+
+## pre-2022
+
+https://news.ycombinator.com/item?id=48613631
+
+## agencies
+
+https://kenn.io/
+https://pierre.computer/
+https://www.loopwerk.io/
+* music https://www.nightbirdsevolve.com/
+* teaching https://www.youtube.com/watch?v=N6-Q2dgodLs https://www.youtube.com/watch?v=N6-Q2dgodLs https://www.youtube.com/watch?v=N6-Q2dgodLs
+* Berkley Mono https://usgraphics.com/
+* https://nightcraft.dev/ 
+* Mise https://en.dev/ https://jdx.dev/posts/2026-04-17-going-full-time-on-open-source/
+* Pi https://rfc.earendil.com/ https://mariozechner.at/posts/2026-04-08-ive-sold-out/ https://lucumr.pocoo.org/2026/4/8/mario-and-earendil/
+> Earendil is proud to announce our early backers: Accel (Daniel Levine), Balderton (Daniel Waterhouse) and the Founders of n8n (Jan Oberhauser), OpenClaw (Peter Steinberger), Revolut (Vlad Yatsenko), Sentry (David Cramer), and Slack (Cal Henderson) among many others. We are grateful for their trust and support. https://github.com/earendil-works/
+* video games https://panic.com/prompt/
+* https://perfloop.ai/
+
+AUXY
+two man comppany that's been working for 10 years to make better music software https://auxy.co/about/
+great artist reqs https://auxy.co/artists/
+try this app https://auxy.co/apps/
+buy this keyboard https://auxy.co/ https://www.youtube.com/watch?v=-hPyIvhrYtY
+
+https://github.com/erp-corp
+🏢 start a company https://tylercowen.com/ -> uuge, ceemuz, corkboard, golf swing, sgt, leadsheet, pyslice https://chatgpt.com/c/69c3f3c5-e8ac-8333-9dff-aa73491db757 https://github.com/cooklang/.github/blob/main/MANIFESTO.md https://news.play.date/news/duke-playdate-education/ http://www.pocoo.org/ https://lucumr.pocoo.org/2026/4/28/before-github/ https://corrode.dev/blog/bugs-rust-wont-catch/
+
 ## inference costs money
 
 https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut-328
@@ -28,6 +60,7 @@ https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-sub
 
 ## houseplant programming
 
+https://hannahilea.com/blog/houseplant-programming/
 https://miren.dev/blog/garden-server
 https://simonwillison.net/2026/Mar/13/craig-mod/
 https://news.ycombinator.com/item?id=47060206
@@ -146,6 +179,8 @@ https://simonwillison.net/2024/Dec/10/ethan-mollick/
 
 🗄️ `notes.md` practice
 
+https://registerspill.thorstenball.com/p/joy-and-curiosity-92 https://antirez.com/news/169
+
 > All the principles of software engineering are not really about code per se.  They are about how to organize the highly detailed specification of a product. https://x.com/unclebobmartin/status/2022016179943117294
 
 aidr https://news.ycombinator.com/item?id=48113425 https://tropes.fyi/
@@ -215,6 +250,9 @@ https://simonwillison.net/2026/Feb/25/closed-tests/
 
 ## you still need to know things
 
+https://news.ycombinator.com/item?id=49023019
+https://www.seangoedecke.com/llms-reward-expertise/
+
 > The chaos is resolved when the Sorcerer reappears and asserts control over the situation, glaring at the apprentice for his foolishness. This seems like an apt metaphor for the AI era: you want to be a sorcerer and not an apprentice. And a sorcerer has to understand the code. https://htmx.org/essays/code-is-cheap/
 > Making coding cheap and easy doesn't change the fact that to make software, you have to spend time thinking about software, and most people would prefer to be thinking about literally anything else. https://x.com/kareem_carr/status/2049116854535262645
 
@@ -262,6 +300,7 @@ https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 
 ## languages
 
+https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html
 * https://simonwillison.net/2026/May/14/mitchell-hashimoto/
 * Golang, Rust, Haskell https://news.ycombinator.com/item?id=47222270
 * Python https://news.ycombinator.com/item?id=48103303
