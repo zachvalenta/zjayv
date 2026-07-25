@@ -8,6 +8,10 @@ date = 2025-10-27
 https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 * factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
 
+## looks
+
+https://news.ycombinator.com/item?id=49117099
+
 ## buy vs. build
 
 https://brandur.org/minimum-viable-unit
@@ -44,8 +48,13 @@ https://github.com/erp-corp
 
 https://newsletter.pragmaticengineer.com/p/the-pulse-a-trend-of-trying-to-cut-328
 
-## anti AI contributions
+## math crisis
 
+https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/
+
+## anti AI contributions vs. Linus
+
+https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything
 https://github.com/kristoff-it/zine/issues/200
 
 ## maintainability
