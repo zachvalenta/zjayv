@@ -5,11 +5,13 @@ date = 2025-10-27
 
 # RESTART
 
+aidr https://news.ycombinator.com/item?id=49336573
 https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 * factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
 
 ## looks
 
+https://op.tngl.io/every-fucking-website/
 https://news.ycombinator.com/item?id=49117099
 
 ## buy vs. build
@@ -62,6 +64,8 @@ https://github.com/kristoff-it/zine/issues/200
 https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/
 
 ## one man band
+
+He went on, he did well. The second time he went on, he did less well. The third time, he struggled, and they never had him back. And I went, "Oh, now I get how this racket works. This is a writer's game. If you can write, you succeed. If you can't, you will not make it." The performing, being funny onstage, that’s great. Any comedian can be funny onstage. But the bullets are the writing. - Seinfeld https://www.newyorker.com/culture/the-new-yorker-interview/the-scholar-of-comedy
 
 > AI-native pods: We’ll be concentrating around AI-native talent who can manage fleets of agents to drive outsized impact. We’ll also be experimenting with reduced pod sizes, including “one person teams” with engineers, designers, and product managers all in one role. https://x.com/brian_armstrong/status/2051616759145185723
 
