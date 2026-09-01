@@ -18,19 +18,16 @@
     font-display: swap;
 }
 
-$color-text: #000;
-$color-bg: #f6f6f6;
-$color-link: #00f;
-$color-border: #000;
+$color-text: #222;
+$color-bg: #fefeee;
+$color-link: #0000ee;
+$color-border: #666;
 $color-border-soft: #ccc;
-$color-quote-bg: #f9f9f9;
-$color-code-text: #24292f;
-$color-code-bg: #f6f8fa;
-$font-primary: Arial, Helvetica, serif;
-
-// Latin Modern Mono first in case the reader has it locally, otherwise the
-// webfont above (confusingly named LatinModernMono, per the reference).
-$font-mono: "Latin Modern Mono", "LatinModernMono", monospace;
+$color-code-bg: #f6f6f4;
+$color-inline-code-bg: #eeffcc;
+$font-primary: "Times New Roman", Times, serif;
+$font-heading: sans-serif;
+$font-mono: monospace;
 
 html {
     font-family: $font-primary;
@@ -44,58 +41,110 @@ html {
 }
 
 body {
-    max-width: 50em;
-    margin: auto;
-    padding: 1em;
+    max-width: 770px;
+    margin: 40px auto;
+    padding: 0 1em;
     hyphens: auto;
     color: $color-text;
-    background-color: $color-bg;
+    background: $color-bg;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+main {
+    padding: 2em;
+    background: #fff;
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 2em 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        padding: 0;
+    }
 }
 
 a {
     color: $color-link;
-    background-color: transparent;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-bg;
-        background-color: $color-link;
-    }
+    background: transparent;
+    text-decoration: underline;
 }
 
-// Overrides the hover behavior above
-a em {
-    color: $color-link;
-    background-color: transparent;
-    text-decoration: none;
+h1,
+h2,
+h3 {
+    font-family: $font-heading;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #444;
+}
+
+h2 {
+    line-height: 1.2;
+    color: #333;
+    border-bottom: 1px solid $color-border;
 }
 
 hr {
-    border-style: ridge;
-    border-width: 1px;
-    border-color: $color-border;
+    border: 0;
+    border-bottom: 1px solid silver;
 }
 
 code,
 pre {
     font-family: $font-mono;
+    font-size: 1.1em;
+    color: #000;
+    background: $color-code-bg;
+}
+
+code {
+    background: $color-inline-code-bg;
 }
 
 pre {
-    width: 100%;
-    font-size: 1em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow-x: auto;
+    border: 0;
+}
+
+pre code {
+    color: #000;
+    background: transparent;
+    border: none;
+}
+
+// Keep Zola line numbers subdued if a highlighted block includes them.
+.giallo-ln {
+    color: #666 !important;
+    user-select: none;
+}
+
+ul,
+ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 li {
-    max-width: 90%;
-    margin: 10px 0;
+    max-width: none;
+    margin: 0;
 }
 
 blockquote {
-    background: $color-quote-bg;
-    border-left: 10px solid $color-border-soft;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
+    margin: 0 0 0 2em;
+    padding: 0 0 0 16px;
+    background: transparent;
+    border: 0;
+    border-left: 2px solid $color-border-soft;
 }
 
 img {
@@ -121,101 +170,72 @@ del {
 }
 
 table {
-    max-width: 100%;
-    width: 100%;
-    margin-inline: auto;
-    overflow: auto;
-    text-align: center;
-    border: 1px solid $color-border;
-    border-spacing: 0;
     border-collapse: collapse;
 }
 
+td,
 th {
-    text-align: center;
-    border: 1px solid $color-border;
-    padding: 0.75rem 1rem;
-    font-weight: 600;
-}
-
-td {
-    text-align: center;
-    border: 1px solid $color-border;
-    padding: 0.5rem 1rem;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: lightgray;
-}
-
-// The reference boxes code in a 2px black rule with a line-number gutter.
-// Zola inlines `background-color: #FFFFFF` from the github-light theme, so the
-// !important is the only way to reach the reference's #f6f8fa.
-pre {
-    margin: 1em 0;
-    padding: 5px;
-    overflow-x: auto;
-    color: $color-code-text;
-    background-color: $color-code-bg !important;
-    border: 2px solid $color-border;
-}
-
-// Zola 0.22 emits one .giallo-l per line, each opening with a .giallo-ln line
-// number. Turn that span into the reference's gutter cell.
-pre:has(.giallo-ln) {
-    padding-left: 0;
-}
-
-.giallo-ln {
-    display: inline-block;
-    min-width: 2.5ch;
-    margin-right: 10px;
-    padding-right: 5px;
-    color: $color-code-text !important;
-    text-align: right;
-    user-select: none;
-    border-right: 2px solid $color-border;
+    padding: 0.7em;
+    border: 1px solid #aaa;
 }
 
 // ---------------------------------------------------------------- site chrome
 
 .blog-title {
-    font-size: 1.6em;
-    text-align: center;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: left;
 }
 
 .blog-subtitle {
-    margin-top: -10px;
-    font-size: 0.8em;
-    text-align: center;
+    margin: 0 0 1em;
+    font-size: 1em;
+    font-family: $font-primary;
+    font-weight: normal;
+    color: $color-text;
+    border: 0;
 }
 
 .navbar {
+    display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .navbar-item {
     display: inline;
     max-width: none;
     margin: 0;
-    padding: 14px;
-    text-align: center;
+    padding: 0;
+}
+
+.site-separator {
+    margin: 0 0 0.5em;
+    border: 0;
 }
 
 // ------------------------------------------------------------------- articles
 
 .post-title {
+    margin-top: 0;
+    font-size: 1.8em;
     text-align: left;
-    font-size: 1.6em;
     text-wrap: balance;
+}
+
+.post-title a {
+    color: #444;
+    text-decoration: none;
 }
 
 .post-subtitle {
     margin-top: -10px;
     font-size: 16px;
+    font-family: $font-primary;
+    font-weight: normal;
+    color: $color-text;
+    border: 0;
 }
 
 .taxonomy-count {

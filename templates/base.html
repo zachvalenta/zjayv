@@ -15,21 +15,25 @@
 
 <body>
 
-<h1 class="blog-title">zach valenta</h1>
-<h2 class="blog-subtitle"><em>notes on books</em></h2>
+<nav>
+  <h1 class="blog-title">zach valenta</h1>
+  <h2 class="blog-subtitle"><em>notes on books</em></h2>
 
-<ul class="navbar">
-  <li class="navbar-item"><a href="/">Home</a></li>
-  <li class="navbar-item"><a href="/blog">Blog</a></li>
-  <li class="navbar-item"><a href="/books">Books</a></li>
-  <li class="navbar-item"><a href="/til">TIL</a></li>
-  <li class="navbar-item"><a href="/how-i-code">How I Code</a></li>
-  <li class="navbar-item"><a href="/about">About</a></li>
-</ul>
+  <ul class="navbar">
+    <li class="navbar-item"><a href="/">Home</a> |</li>
+    <li class="navbar-item"><a href="/blog">Blog</a> |</li>
+    <li class="navbar-item"><a href="/books">Books</a> |</li>
+    <li class="navbar-item"><a href="/til">TIL</a> |</li>
+    <li class="navbar-item"><a href="/how-i-code">How I Code</a> |</li>
+    <li class="navbar-item"><a href="/about">About</a></li>
+  </ul>
+</nav>
 
-<hr>
+<hr class="site-separator">
 
+<main>
 {% block content %} {% endblock %}
+</main>
 
 </body>
 
