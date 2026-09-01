@@ -2,12 +2,15 @@
 
 {% block content %}
 
-<h1 class="title"> {{ page.title }} </h1>
+<h1 class="post-title"> {{ page.title }} </h1>
+
+<hr>
+
 {{ page.content | safe }}
 
 <p>You can email: zjv5002 at Google's email service.</p>
 
-<p>around the web:</a></p>
+<p>around the web:</p>
 <ul>
     <li><a href="https://github.com/zachvalenta">Github</a></li>
     <li><a href="https://stackoverflow.com/users/6813490/zach-valenta">Stack Overflow</a></li>
@@ -15,7 +18,7 @@
     <li><a href="https://en.wikipedia.org/wiki/Special:Contributions/Zjayv">Wikipedia</a></li>
 </ul>
 
-<p>in composite:</a></p>
+<p>in composite:</p>
 <ul>
     <li><a href="https://www.youtube.com/watch?v=Z_fdOPvmBrI">Aly Us - Follow Me</a></li>
     <li><a href="https://www.youtube.com/watch?v=1OKQdp6iGUk">Jeanne Moreau - Elevator to the Gallows</a></li>
@@ -23,4 +26,3 @@
 </ul>
 
 {% endblock content %}
-

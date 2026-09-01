@@ -3,66 +3,34 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>zach valenta</title>
+<link rel="preload" as="style" href="/styles.css">
 <link rel="stylesheet" href="/styles.css">
+<link rel="preload" as="font" type="font/woff" href="/fonts/lmmono-regular-webfont.woff" crossorigin>
+<link rel="preload" as="font" type="font/woff" href="/fonts/lmmono-italic-webfont.woff" crossorigin>
 <link rel="icon" type="image/png" href="/favicon.png">
 <script data-goatcounter="https://zjayv.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
-  <nav class="menu">
-    <a class="site-title" href="/">zach valenta</a>
-    <ul class="menu-items">
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/books">Books</a></li>
-      <li><a href="/til">TIL</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
-  </nav>
 
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
-    </div>
-  </section>
-<script>
-(function() {
-  var sidebar = document.querySelector('.toc-sidebar');
-  if (!sidebar) return;
+<h1 class="blog-title">zach valenta</h1>
+<h2 class="blog-subtitle"><em>notes on books</em></h2>
 
-  var tocLinks = sidebar.querySelectorAll('a[href*="#"]');
-  var headings = Array.from(document.querySelectorAll('.main-content h1[id], .main-content h2[id], .main-content h3[id]'));
+<ul class="navbar">
+  <li class="navbar-item"><a href="/">Home</a></li>
+  <li class="navbar-item"><a href="/blog">Blog</a></li>
+  <li class="navbar-item"><a href="/books">Books</a></li>
+  <li class="navbar-item"><a href="/til">TIL</a></li>
+  <li class="navbar-item"><a href="/how-i-code">How I Code</a></li>
+  <li class="navbar-item"><a href="/about">About</a></li>
+</ul>
 
-  if (!headings.length || !tocLinks.length) return;
+<hr>
 
-  var linkMap = {};
-  tocLinks.forEach(function(link) {
-    var hash = link.getAttribute('href').split('#')[1];
-    if (hash) linkMap[hash] = link;
-  });
+{% block content %} {% endblock %}
 
-  var currentActive = null;
-
-  function setActive(id) {
-    if (id === currentActive) return;
-    currentActive = id;
-    tocLinks.forEach(function(l) { l.classList.remove('active'); });
-    if (id && linkMap[id]) linkMap[id].classList.add('active');
-  }
-
-  function updateActive() {
-    var threshold = window.scrollY + window.innerHeight * 0.25;
-    var activeId = null;
-    for (var i = 0; i < headings.length; i++) {
-      if (headings[i].offsetTop <= threshold) activeId = headings[i].id;
-    }
-    setActive(activeId);
-  }
-
-  window.addEventListener('scroll', updateActive, { passive: true });
-  updateActive();
-})();
-</script>
 </body>
 
 </html>

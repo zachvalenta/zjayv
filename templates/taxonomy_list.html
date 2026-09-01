@@ -2,9 +2,11 @@
 
 {% block content %}
 
-<h1 class="title">{{ taxonomy.name }}</h1>
+<h1 class="post-title">{{ taxonomy.name }}</h1>
 
-<ul class="taxonomy-list">
+<hr>
+
+<ul>
 {% for term in terms %}
     <li>
         <a href="{{ term.permalink | safe }}">{{ term.name }}</a>

@@ -2,9 +2,13 @@
 
 {% block content %}
 
-<h1 class="title"> {{ section.title }} </h1>
+<h1 class="post-title"> {{ section.title }} </h1>
 
-<p><a href="{{ get_url(path='@/books/fiction/_index.md') }}">fiction</a></p>
-<p><a href="{{ get_url(path='@/books/nonfiction/_index.md') }}">non-fiction</a></p>
+<hr>
+
+<ul>
+  <li><a href="{{ get_url(path='@/books/fiction/_index.md') }}">fiction</a></li>
+  <li><a href="{{ get_url(path='@/books/nonfiction/_index.md') }}">non-fiction</a></li>
+</ul>
 
 {% endblock content %}

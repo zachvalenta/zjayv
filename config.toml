@@ -16,9 +16,9 @@ taxonomies = [
 ]
 
 [markdown]
-# Syntax highlighting configuration
+# Reference uses the GitHub-light Rouge theme (#24292f on #f6f8fa).
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+theme = "github-light"
 style = "inline"
 
 [extra]

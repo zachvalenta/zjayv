@@ -1,593 +1,223 @@
 @font-face {
-    font-family: "Roboto Slab";
-    font-weight: 100 900;
+    font-family: "LatinModernMono";
+    src:
+        url("/fonts/lmmono-regular-webfont.woff") format("woff"),
+        url("/fonts/lmmono-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
-    src: url("/fonts/roboto-slab-latin.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Roboto Slab";
-    font-weight: 100 900;
-    font-display: swap;
-    src: url("/fonts/roboto-slab-latin-ext.woff2") format("woff2");
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF;
-}
-
-@font-face {
-    font-family: "Roboto Mono";
-    font-weight: 100 900;
-    font-display: swap;
-    src: url("/fonts/roboto-mono-latin.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Roboto Mono";
+    font-family: "LatinModernMono";
+    src:
+        url("/fonts/lmmono-italic-webfont.woff") format("woff"),
+        url("/fonts/lmmono-italic-webfont.ttf") format("truetype");
+    font-weight: normal;
     font-style: italic;
-    font-weight: 100 900;
     font-display: swap;
-    src: url("/fonts/roboto-mono-italic-latin.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: "Caveat";
-    font-weight: 700;
-    font-display: block;
-    src: url("/fonts/caveat-subset-700.woff2") format("woff2");
-}
-
-$color-text: #202020;
-$color-muted: #778492;
-$color-heading: #3d444c;
-$color-link: #006ccc;
-$color-bg: #fff;
-$color-bg-soft: #f5f5f5;
-$color-bg-nav-hover: #dae3e7;
-$color-border: #888;
+$color-text: #000;
+$color-bg: #f6f6f6;
+$color-link: #00f;
+$color-border: #000;
 $color-border-soft: #ccc;
-$color-code-text: #3f0099;
-$color-code-bg: #f0e5ff;
-$color-pre-bg: #fffdf0;
-$color-note-bg: #e0f8ff;
-$color-warning-bg: #fff8a0;
-$color-tag-text: #008080;
-$color-tag-bg: #e0f0f0;
-$color-tag-hover-bg: #00a0a0;
-$color-tag-hover-text: #fff;
-$font-primary: "Roboto Slab", serif;
-$font-mono: "Roboto Mono", monospace;
+$color-quote-bg: #f9f9f9;
+$color-code-text: #24292f;
+$color-code-bg: #f6f8fa;
+$font-primary: Arial, Helvetica, serif;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-    overflow-x: hidden;
-}
+// Latin Modern Mono first in case the reader has it locally, otherwise the
+// webfont above (confusingly named LatinModernMono, per the reference).
+$font-mono: "Latin Modern Mono", "LatinModernMono", monospace;
 
 html {
-    scroll-padding-top: 56px;
-    text-rendering: optimizeLegibility;
+    font-family: $font-primary;
+}
+
+// mobile safari >:(
+@media screen and (max-device-width: 480px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
 }
 
 body {
-    position: relative;
-    min-height: 100vh;
-    font-family: $font-primary;
-    font-size: 16px;
-    line-height: 1.42857143;
-    overflow-wrap: break-word;
+    max-width: 50em;
+    margin: auto;
+    padding: 1em;
+    hyphens: auto;
     color: $color-text;
-    background: $color-bg;
-}
-
-.menu {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    min-height: 44px;
-    margin: 0;
-    padding: 0;
-    background: $color-bg-soft;
-    border-bottom: 1px solid $color-border;
-}
-
-.site-title {
-    display: block;
-    max-width: 220px;
-    padding: 11px 15px 13px;
-    color: $color-heading;
-    font-family: "Caveat", $font-primary;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 20px;
-    text-decoration: none;
-
-    &:hover {
-        background: $color-bg-nav-hover;
-        text-decoration: none;
-    }
-}
-
-.menu-items {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0 15px;
-
-    li {
-        margin: 0;
-    }
-
-    a {
-        display: block;
-        padding: 12px 15px;
-        color: $color-heading;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 20px;
-        text-decoration: none;
-
-        &:hover {
-            background: $color-bg-nav-hover;
-            text-decoration: none;
-        }
-    }
-}
-
-.section,
-.container {
-    width: 100%;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container > :not(.content-with-toc) {
-    max-width: 660px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    background-color: $color-bg;
 }
 
 a {
     color: $color-link;
+    background-color: transparent;
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline 1.5px;
-        text-underline-offset: 3px;
-        background: transparent;
+        color: $color-bg;
+        background-color: $color-link;
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $color-heading;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0.67em 0;
-
-    a {
-        color: $color-heading;
-    }
-}
-
-h1,
-.title {
-    font-size: 2.25em;
-}
-
-h2 {
-    font-size: 1.85em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1.25em;
-}
-
-p,
-ol,
-ul {
-    line-height: 1.5;
-    margin-bottom: 1em;
-}
-
-ol,
-ul {
-    list-style-position: inside;
-}
-
-li > ul,
-li > ol {
-    margin-bottom: 0;
-    margin-left: 1em;
+// Overrides the hover behavior above
+a em {
+    color: $color-link;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 hr {
-    border: 0;
-    border-top: 1px solid $color-border;
-    margin: 1em 0;
-}
-
-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0.5em 1em;
-    border: 1px solid $color-border-soft;
-    text-align: left;
-}
-
-img,
-iframe,
-embed,
-object,
-video {
-    max-width: 100%;
-}
-
-blockquote {
-    border-left: 2px solid $color-text;
-    padding: 1em;
-    margin: 1em 0;
-    font-size: inherit;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-
-    &.note,
-    &.question,
-    &.takeaway {
-        background-color: $color-note-bg;
-    }
-
-    &.warning,
-    &.disclaimer {
-        background-color: $color-warning-bg;
-    }
+    border-style: ridge;
+    border-width: 1px;
+    border-color: $color-border;
 }
 
 code,
 pre {
     font-family: $font-mono;
-    font-size: 0.85em;
-}
-
-code {
-    padding: 2px 4px;
-    border-radius: 4px;
-    white-space: pre;
-}
-
-:not(pre) > code {
-    color: $color-code-text;
-    background-color: $color-code-bg;
-    border: 1px solid $color-code-text;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    white-space: break-spaces;
 }
 
 pre {
-    overflow: auto;
-    margin: 1em 0;
-    padding: 9.5px;
-    color: $color-text;
-    background-color: $color-pre-bg;
-    border: 1px solid $color-border;
-    border-radius: 4px;
-
-    code {
-        padding: 0;
-        border: 0;
-        background: transparent;
-        font-size: inherit;
-        line-height: 1.42857143;
-    }
-}
-
-.content-with-toc {
     width: 100%;
-    border-bottom: 1px solid $color-border-soft;
+    font-size: 1em;
 }
 
-.article-header,
-.main-content {
-    width: 100%;
-    padding: 0 4.5% 10px;
+li {
+    max-width: 90%;
+    margin: 10px 0;
 }
 
-.article-header {
-    margin: 5% 0;
+blockquote {
+    background: $color-quote-bg;
+    border-left: 10px solid $color-border-soft;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+// wow!
+img + em {
+    display: block;
     text-align: center;
+}
+
+video {
+    width: auto;
+    max-width: 100%;
+}
+
+del {
+    text-decoration-thickness: 2px;
+}
+
+table {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid $color-border;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    border: 1px solid $color-border;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+td {
+    text-align: center;
+    border: 1px solid $color-border;
+    padding: 0.5rem 1rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+// The reference boxes code in a 2px black rule with a line-number gutter.
+// Zola inlines `background-color: #FFFFFF` from the github-light theme, so the
+// !important is the only way to reach the reference's #f6f8fa.
+pre {
+    margin: 1em 0;
+    padding: 5px;
+    overflow-x: auto;
+    color: $color-code-text;
+    background-color: $color-code-bg !important;
+    border: 2px solid $color-border;
+}
+
+// Zola 0.22 emits one .giallo-l per line, each opening with a .giallo-ln line
+// number. Turn that span into the reference's gutter cell.
+pre:has(.giallo-ln) {
+    padding-left: 0;
+}
+
+.giallo-ln {
+    display: inline-block;
+    min-width: 2.5ch;
+    margin-right: 10px;
+    padding-right: 5px;
+    color: $color-code-text !important;
+    text-align: right;
+    user-select: none;
+    border-right: 2px solid $color-border;
+}
+
+// ---------------------------------------------------------------- site chrome
+
+.blog-title {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.blog-subtitle {
+    margin-top: -10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-item {
+    display: inline;
+    max-width: none;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+}
+
+// ------------------------------------------------------------------- articles
+
+.post-title {
+    text-align: left;
+    font-size: 1.6em;
     text-wrap: balance;
 }
 
-.title {
-    margin: 0.67em 0;
-    color: $color-heading;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.subtitle {
-    color: $color-muted;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.taxonomy-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin: 0 0 1em;
-}
-
-.taxonomy-tag {
-    display: inline-block;
-    margin: 0;
-    padding: 0 5px;
-    color: $color-tag-text;
-    background-color: $color-tag-bg;
-    border: 1px solid $color-tag-text;
-    border-radius: 0.3em;
-    font-weight: 700;
-    line-height: 1.5;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-tag-hover-text;
-        background-color: $color-tag-hover-bg;
-        border-color: $color-tag-hover-bg;
-        text-decoration: none;
-    }
-}
-
-.taxonomy-list {
-    list-style-position: inside;
-    margin-bottom: 1em;
-
-    li {
-        margin-bottom: 0.5em;
-    }
+.post-subtitle {
+    margin-top: -10px;
+    font-size: 16px;
 }
 
 .taxonomy-count {
-    color: $color-muted;
     font-size: 0.85em;
-}
-
-.main-content {
-    min-width: 0;
-}
-
-.toc-sidebar {
-    display: none;
-}
-
-#markdown-toc {
-    list-style-position: inside;
-
-    ul {
-        margin-bottom: 0;
-        margin-left: 1em;
-    }
-
-    li {
-        margin: 0;
-    }
-}
-
-@media (width < 1100px) {
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-}
-
-@media (768px <= width < 1000px) {
-    .article-header,
-    .main-content {
-        padding-right: 14.0625%;
-        padding-left: 14.0625%;
-    }
-}
-
-@media (1000px <= width) {
-    .article-header,
-    .main-content {
-        padding-right: 22.5%;
-        padding-left: 22.5%;
-    }
-}
-
-@media (1200px <= width) {
-    .toc-sidebar {
-        position: fixed;
-        top: 60px;
-        left: 1%;
-        z-index: 10;
-        display: block;
-        width: 19.5%;
-        max-height: calc(100vh - 72px);
-        overflow-y: auto;
-        padding: 0 10px 8px;
-        margin: 0 0 16px;
-        color: $color-text;
-        background-color: $color-bg-soft;
-        border-right: 2px solid $color-border;
-        font-size: 1rem;
-        line-height: 1.5;
-
-        &::before {
-            content: "Contents";
-            display: block;
-            color: $color-heading;
-            font-size: 1.4em;
-            font-weight: 700;
-            line-height: 1.5;
-        }
-
-        h2 {
-            display: none;
-        }
-
-        a {
-            color: $color-link;
-            font-weight: 400;
-            line-height: 1.5;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline 1.5px;
-                text-underline-offset: 3px;
-            }
-
-            &.active {
-                font-weight: 700;
-            }
-        }
-    }
-}
-
-@media (width < 768px) {
-    .menu {
-        display: block;
-    }
-
-    .site-title {
-        max-width: none;
-    }
-
-    .menu-items {
-        display: block;
-        padding: 0;
-        border-top: 1px solid $color-border-soft;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #d0d0d0;
-        background: #212d33;
-    }
-
-    .menu,
-    .toc-sidebar {
-        background: #212d33;
-    }
-
-    .menu,
-    .toc-sidebar,
-    hr {
-        border-color: #999;
-    }
-
-    .site-title,
-    .menu-items a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .title,
-    .toc-sidebar::before,
-    h1 a,
-    h2 a,
-    h3 a,
-    h4 a,
-    h5 a,
-    h6 a {
-        color: #bcd0e5;
-    }
-
-    .site-title:hover,
-    .menu-items a:hover {
-        background: #101619;
-    }
-
-    .subtitle,
-    .taxonomy-count {
-        color: #8796a5;
-    }
-
-    a,
-    .toc-sidebar a {
-        color: #66b7ff;
-    }
-
-    blockquote {
-        border-left-color: #d0d0d0;
-    }
-
-    blockquote.note,
-    blockquote.question,
-    blockquote.takeaway {
-        background-color: #14324c;
-    }
-
-    blockquote.warning,
-    blockquote.disclaimer {
-        background-color: #664400;
-    }
-
-    :not(pre) > code {
-        color: #6cb;
-        background-color: #19332e;
-        border-color: #6cb;
-    }
-
-    pre {
-        color: #d0d0d0;
-        background-color: #151e1d;
-        border-color: #999;
-    }
-
-    td,
-    th,
-    .content-with-toc {
-        border-color: #666;
-    }
-
-    .taxonomy-tag {
-        color: #f0f0f0;
-        background-color: #1c8c8c;
-        border-color: #1c8c8c;
-
-        &:hover {
-            color: #f0f0f0;
-            background-color: #146666;
-            border-color: #146666;
-        }
-    }
 }
