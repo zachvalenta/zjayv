@@ -9,6 +9,25 @@ aidr https://news.ycombinator.com/item?id=49336573
 https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 * factory https://simonwillison.net/2026/Feb/7/software-factory/ https://blog.bytebytego.com/p/ep201-the-evolution-of-ai-in-software https://simonwillison.net/2026/Jan/28/the-five-levels/
 
+## people are getting mad
+
+Zig / Andrew Kelley
+https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html https://codeberg.org/Codeberg/org/commit/71149c7fc95ccfeae36109b5cddca339e4aa1473
+https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/
+
+## people getting sad
+
+https://marginalrevolution.com/marginalrevolution/2026/09/the-mathematicians-rebel-against-ai.html
+https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/
+
+## marginal
+
+> The field of software engineering does not have the same structure as mathematics. We write code to make money, not to earn prestige or advance the frontier of human knowledge. But AI is undercutting the traditional avenues for prestige in software engineering as well. It used to be that you could put a meaty project on your GitHub — say, an emulator, or a toy OS — and people would know you were a skilled engineer. But now projects like that are worthless, because everyone just assumes they’re vibe-coded. We used to tell stories about engineers who would disappear and rewrite a system over the weekend, or produce thousands of lines of code a day. Now anyone can do that with an OpenAI subscription. Like mathematics, software engineers are going to have to rebuild our cultural sense of the kind of work we value. We are either going to have to silo “AI work” off from “human work” like chess, or to find some legible human skills to recognize that can’t be easily counterfeited by AI. In the meantime, a lot of people who were successful in the old world are going to be very unhappy. https://www.seangoedecke.com/ai-is-breaking-our-proxies-for-expertise/
+
+## persona
+
+you need to research who's behind the project https://www.youtube.com/watch?v=7uumknh43rM
+
 ## looks
 
 https://op.tngl.io/every-fucking-website/
@@ -295,6 +314,9 @@ https://news.ycombinator.com/item?id=46080498
 
 ## flood of idiots / slop
 
+https://lucumr.pocoo.org/2026/9/7/astra-why/
+Claudeish https://news.ycombinator.com/item?id=49677983
+https://simonwillison.net/2026/Apr/3/greg-kroah-hartman/ https://simonwillison.net/2026/Apr/3/daniel-stenberg/
 https://news.ycombinator.com/item?id=46365105
 psychosis https://x.com/mitchellh/status/2055380239711457578
 
