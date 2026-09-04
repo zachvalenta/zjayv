@@ -295,6 +295,7 @@ https://news.ycombinator.com/item?id=46080498
 
 ## flood of idiots / slop
 
+https://simonwillison.net/2026/Apr/3/greg-kroah-hartman/ https://simonwillison.net/2026/Apr/3/daniel-stenberg/
 https://news.ycombinator.com/item?id=46365105
 psychosis https://x.com/mitchellh/status/2055380239711457578
 
