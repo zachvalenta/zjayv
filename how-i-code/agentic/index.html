@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zach valenta</title>
+<link rel="preload" as="style" href="/styles.css">
+<link rel="stylesheet" href="/styles.css">
+<link rel="preload" as="font" type="font/woff" href="/fonts/lmmono-regular-webfont.woff" crossorigin>
+<link rel="preload" as="font" type="font/woff" href="/fonts/lmmono-italic-webfont.woff" crossorigin>
+<link rel="icon" type="image/png" href="/favicon.png">
+<script data-goatcounter="https://zjayv.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <h1 class="blog-title">zach valenta</h1>
+  <h2 class="blog-subtitle"><em>notes on books</em></h2>
+
+  <ul class="navbar">
+    <li class="navbar-item"><a href="/">Home</a> |</li>
+    <li class="navbar-item"><a href="/blog">Blog</a> |</li>
+    <li class="navbar-item"><a href="/books">Books</a> |</li>
+    <li class="navbar-item"><a href="/til">TIL</a> |</li>
+    <li class="navbar-item"><a href="/how-i-code">How I Code</a> |</li>
+    <li class="navbar-item"><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+<hr class="site-separator">
+
+<main>
+
+
+<h1 class="post-title">
+  <a href="https://zjayv.com/how-i-code/agentic/">agentic</a>
+</h1>
+
+<h2 class="post-subtitle">
+  <span><em>Nov 25, 2025</em></span>
+</h2>
+
+
+<hr>
+
+<ul>
+<li>agent: Claude Code</li>
+<li><code>docs/</code> &gt; <code>CLAUDE.md</code></li>
+<li>vim readline, multi-line: <code>/terminal-setup</code></li>
+</ul>
+<h1 id="for-bookcase-domains-sw">for bookcase/domains/sw</h1>
+<h2 id="context">context</h2>
+<p>ok, here's how I'm doing config for CC rn</p>
+<ul>
+<li><code>/Users/zach/Documents/denv/dotfiles/ai/claude</code></li>
+</ul>
+<p>So for some work projects:</p>
+<ul>
+<li><code>/Users/zach/Documents/zv/work/kero/src/automation/rush</code></li>
+<li><code>/Users/zach/Documents/zv/work/kero/docs/agentic</code></li>
+</ul>
+<p>they point to <code>kero.md</code>. Main config from <code>/Users/zach/.claude</code> points to <code>user.md</code></p>
+<p>But then I got to thinking: I'm one of those crazy Zettelkasten people. Not <em>exactly</em> what he describes here, but something along those lines. https://notes.andymatuschak.org/Evergreen_notes</p>
+<p>Anyhow, my thinking, given that I have a ton of notes (<code>/Users/zach/Documents/zv/notes</code>), why don't I:</p>
+<ul>
+<li>get Claude to write context files for my bookcase, domains, and sw notes and put them here <code>/Users/zach/Documents/denv/dotfiles/ai/claude/context/notes</code></li>
+<li>write some slash comands (<code>/Users/zach/Documents/denv/dotfiles/ai/claude/commands</code>) so I can put these contexts to use when I'm working w/ CC</li>
+</ul>
+<h2 id="use-cases">use cases</h2>
+<p>To that last point, two things I was thinking about today that could be helped by all this:</p>
+<ul>
+<li>I'm trying to redesign my personal site. <code>site.md</code> is about SSGs, but also has a bunch of design stuff in their. I have <code>frontend.md</code>, CSS stuff there. And then <code>design.md</code> more broadly. So I struggling to articulate what I wanted to do w/ my site and thought "hey, I need to learn the semantics of visual/graphic design". Be nice if I could port what I was learning in my conversation with Claude back to my notes.</li>
+<li>You'll notice that <code>bookcase</code> kinda sorta rhymes w/ a bibliography mgmt system like Zotero or this TUI version https://cobib.gitlab.io/cobib/cobib.html -&gt; I'd love to make bookcase less of a mess, and it would help a lot if CC knew about my notes and how bookcase fits in.</li>
+</ul>
+<h2 id="worklogs">worklogs</h2>
+<p>Anyway, let's proceed as such, pausing btw step for me to review your work:</p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+context file for bookcase</li>
+<li><input disabled="" type="checkbox" checked=""/>
+context file for domains</li>
+<li><input disabled="" type="checkbox" checked=""/>
+context file for sw</li>
+</ul>
+<h2 id="slash-command">slash command</h2>
+<p>Ok, here's what I'm thinking in terms of slash commands:</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> commands/notes</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── inject-context.md</span><span style="color: #6A737D;">   # pull relevant context note from /Users/zach/Documents/denv/dotfiles/ai/claude/context/notes into context, in order that instead of me manually having to use the @ command, you&#39;ll have a much easier/cheaper time figuring out where to look vs. grepping through a ton of files and blowing through a ton of tokens</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── improve-context.md</span><span style="color: #6A737D;">  # super version of Claude&#39;s @ command, where - if you&#39;re taking the trouble of bringing an entire file into memory, use that to also improve the TOPICS/SEARCH/RELATED tags for the file in the relevant context file @ /Users/zach/Documents/denv/dotfiles/ai/claude/context/notes</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── rf.md</span><span style="color: #6A737D;">  # propose refactoring the filesystem for better taxonomy | making connections | (re)writing sections using the guidelines from /Users/zach/Documents/denv/dotfiles/ai/claude/context/markdown.md</span></span></code></pre>
+<p>Here's an example of how I imagine this working:</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6A737D;"># CC looks at the CWD&#39;s project&#39;s spec file + uses context to figure out what languages/frameworks I know best and which ones I&#39;m intrigued by -&gt; throws out some suggestions</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">/inject-context</span><span style="color: #032F62;"> Hey Claude, I&#39;m trying to think of what the stack should be for $FOO_PROJECT_IN_CWD.</span></span></code></pre><pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6A737D;"># CC takes the files that it&#39;s loaded into memory from /inject-context and uses that to improve the context files</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">/improve-context</span></span></code></pre><pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6A737D;"># CC takes the files that it&#39;s loaded into memory from /inject-context and uses that to improve the notes themselves</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">/rf</span></span></code></pre>
+<p>Do you think this makes sense?</p>
+<p>If so, which one do you think we should start with?</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">This</span><span style="color: #032F62;"> makes a lot of sense. The flow is:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">1.</span><span style="color: #032F62;"> inject-context → smart loader</span><span> (use</span><span style="color: #032F62;"> index to find relevant notes, load them</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">2.</span><span style="color: #032F62;"> improve-context → feedback loop</span><span> (after</span><span style="color: #032F62;"> loading files, improve the index</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">3.</span><span style="color: #032F62;"> rf → deeper work</span><span> (refactor</span><span style="color: #032F62;"> the notes themselves</span><span>)</span></span></code></pre>
+<p>re: the rf slash cmd, section C is mixing concerns ++ but that's not the real issue. I don't need your help in conforming to my own sui generis Markdown conventions (the fault is entirely my own!). Rather, Markdown guidance is for <em>you</em> when you're using the /rf slash command.</p>
+<p>Now, while taxonomy and connections are useful aspects of <code>rf</code>, the real goal of <code>rf</code> - what should really be happening in section C 'content - as stated is: "CC takes the files that it's loaded into memory from /inject-context and uses that to improve the notes themselves". <code>rf</code> is the command that <em>is</em> - intentionally - token intensive. Here, I'm asking you to use <code>inject-context</code> and then go a step further: figure out where roughly in the notes we should be looking at, <em>then</em> dive deeper and read the notes and tell me what I know, what I should know, and what I need to know. <em>This</em> is the command where you're going to set me straight on compiler design | Django auth plugins | PLT, etc.</p>
+<hr />
+<ul>
+<li><input disabled="" type="checkbox"/>
+use slash cmd for site design</li>
+</ul>
+<h1 id="current-setup">current setup</h1>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">$</span><span style="color: #032F62;"> pwd</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">/Users/zach/Documents/zv/work/kero/src/automation/rush/.claude</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">$</span><span style="color: #032F62;"> t</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;"></span><span style="color: #032F62;"> .</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;">  CLAUDE.md</span><span> -</span><span style="color: #D73A49;">&gt;</span><span style="color: #032F62;"> /Users/zach/Documents/denv/dotfiles/ai/claude/kero.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;">  commands</span><span> -</span><span style="color: #D73A49;">&gt;</span><span style="color: #032F62;"> ../../../../docs/agentic/commands</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">└──</span><span style="color: #032F62;">  settings.json</span><span> -</span><span style="color: #D73A49;">&gt;</span><span style="color: #032F62;"> /Users/zach/Documents/denv/dotfiles/ai/claude/settings.json</span></span></code></pre>
+<p>THINGS THAT MATTER</p>
+<ul>
+<li>model</li>
+<li>thinking mode</li>
+<li>perms</li>
+<li>context</li>
+</ul>
+<p>WIRING</p>
+<ul>
+<li>db: slash commands symlinked to <code>$PROJECT/.claude/commands</code></li>
+<li>docs: point to from <code>CLAUDE.md</code> https://github.com/zachvalenta/dotfiles-mini23/commit/33a4b64da3a67231887bfb17ff48c0e7451b7cd4</li>
+<li>file access: ``/Users/zach/Documents/zv/work/kero/**` | just point! https://code.claude.com/docs/en/common-workflows#reference-files-and-directories</li>
+</ul>
+<h1 id="what-i-m-looking-for-in-an-ai-agent">what I'm looking for in an AI agent</h1>
+<p>REQUIREMENTS</p>
+<ul>
+<li>read user-configured docs on startup / without prompting</li>
+<li>use user-configured tools to connect and read from db</li>
+<li>doesn't prompt me for perms all the time; either default or allow user to config such that agent will just read/edit files and run typical bash commands (cat, ls, etc.) without asking for perms</li>
+</ul>
+<p>Seems like it should be fairly straight forward. Surprised that Claude Code - supposedly best in class - is not cutting it.</p>
+<p>Other agents I know about:</p>
+<ul>
+<li>Crush</li>
+<li>Codex</li>
+<li>Gemini</li>
+<li>OpenCode</li>
+</ul>
+<p>Tell me how each would accomplish my requirements.</p>
+<h1 id="gimme-the-data">gimme the data!</h1>
+<p>🔗 https://chatgpt.com/c/691a3e15-e294-8333-83b3-d6cddee0b93e</p>
+<p>A pretty typical workflow:</p>
+<ul>
+<li>I get a bug report</li>
+<li>figure out what portion(s) of the codebase it touches on</li>
+<li>figure out what tables/records in the database it touches on</li>
+</ul>
+<p>Right now, Claude Code and other agents are great at looking at a bug report and then looking at the codebase, but: what about the data?!</p>
+<p>I asked an LLM about this a couple months ago:</p>
+<ul>
+<li>prompt: "What I'm envisioning: in the same way you open Claude Code or Codex in a repo and can start asking questions of the codebase, you could <em>at the same time</em> give Claude Code | Codex your db creds and it could 'see' both the database and code at the same time. Feels like this should exist / exists already and I just don't know about it."</li>
+<li>completion: "I'll walk you through hooking up a CLI LLM interface to a database. This is a great use case for natural language data queries!"</li>
+</ul>
+<p>This is not at all what I'm after. I feel like I see a lot of BI tools in this space and the pitch is something fit for an advert: "What going on with sales this quarter?" And then some stupid bar chart pops up.</p>
+<p>Their workflow:</p>
+<ul>
+<li>takes natural language questions</li>
+<li>converts to SQL</li>
+<li>exec against db Which is all well and good, but I need the data working in concert with what agents can already do in terms of codebase analysis.</li>
+</ul>
+<p>A standalone CLI that hooked up an LLM to the database is definitely helpful, but surfacing the db to a pre-existing agent seems both faster (in terms of my dev time) and more powerful. Just for reference, here's my taxonomy of a bunch of stuff in this space:</p>
+<h1 id="worklog-from-getting-slash-commands-going">WORKLOG FROM GETTING SLASH COMMANDS GOING</h1>
+<p>🔗 https://chatgpt.com/c/691a3e15-e294-8333-83b3-d6cddee0b93e</p>
+<p>I need a way to bring the database into context for an agent.</p>
+<h2 id="org-tools">org tools</h2>
+<p>Here's an example of what that looks like:</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="python"><span class="giallo-l"><span style="color: #032F62;">&quot;&quot;&quot;</span></span>
+<span class="giallo-l"><span style="color: #032F62;">Check which specific markets are being published during betstops</span></span>
+<span class="giallo-l"><span style="color: #032F62;">&quot;&quot;&quot;</span></span>
+<span class="giallo-l"><span style="color: #D73A49;">import</span><span> pymongo</span></span>
+<span class="giallo-l"><span>client</span><span style="color: #D73A49;"> =</span><span> pymongo.MongoClient(</span><span style="color: #005CC5;">CONN_STRING</span><span>,</span><span style="color: #E36209;"> directConnection</span><span style="color: #D73A49;">=</span><span style="color: #005CC5;">True</span><span>)</span></span>
+<span class="giallo-l"><span>event_id</span><span style="color: #D73A49;"> =</span><span> event_id</span></span>
+<span class="giallo-l"><span>db</span><span style="color: #D73A49;"> =</span><span> client[event_id]</span></span>
+<span class="giallo-l"><span>pbp</span><span style="color: #D73A49;"> =</span><span> db[</span><span style="color: #032F62;">&quot;pbp&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>kafka</span><span style="color: #D73A49;"> =</span><span> db[</span><span style="color: #032F62;">&quot;kafka_activity_log&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>markets</span><span style="color: #D73A49;"> =</span><span> db[</span><span style="color: #032F62;">&quot;markets&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>event_info</span><span style="color: #D73A49;"> =</span><span> db[</span><span style="color: #032F62;">&quot;event_info&quot;</span><span>]</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;"># buncha queries ⬇️ specifics not important right now</span></span></code></pre>
+<p>This is fine enough, but I'd like a more systematized approach:</p>
+<ul>
+<li>seems like db connection and perms should be handled in one place</li>
+<li>seems like there should be a general "here's the bug, here's the codebase, i don't know what to do next so just query around and figure things out"</li>
+<li>seems like there should be many more specifc "here's the bug, here's the codebase, run $QUERY_X|Y|Z and let's see what's going on"</li>
+</ul>
+<p>I also don't know what Claude (or more general) functionality I should use to achieve this:</p>
+<ul>
+<li>commands</li>
+<li>subagents</li>
+<li>skills</li>
+<li>memories</li>
+</ul>
+<p>Could you provide definitions of these? My hunch is that skills are overkill to start at least, could potentially be useful.</p>
+<p>I'd like to wire things up such that:</p>
+<ul>
+<li>things that should be global are global i.e. have a base thing for Mongo to make sure all queries are read-only</li>
+<li>but then have a per-project aspect that handles db connection strings per env (in the event, say, I also need to use Mongo for a different client)</li>
+</ul>
+<p>Another wrinkle: while it would be helpful to have <code>my_docs_on_work</code> within <code>repo_I_mostly_work_on</code>, I'm not running the show, these guys don't care about | hostile to docs, let alone agentic. So I'd like to keep everything I'm using for <code>repo_I_mostly_work_on</code> <em>in</em> <code>my_docs_on_work</code> in a new repo.</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> work_codebases</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── automation</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └──── repo_I_mostly_work_on</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── messagings</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── ML</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> my_docs_on_work</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── agentic</span><span style="color: #6A737D;">  # new repo for all work scripts/MCP</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── eng</span><span style="color: #6A737D;">      # docs that Claude will use</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── tickets</span><span style="color: #6A737D;">  # my notes for each Jira ticket</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── worklogs</span><span style="color: #6A737D;"> # just a log of everything I&#39;m doing during the week</span></span></code></pre>
+<p>FEW MORE THINGS</p>
+<ul>
+<li>There's a kind of file soup rn btw <code>AGENTS.md</code>, <code>CLAUDE.md</code>, <code>spec.md</code>. To me this misses the entire point. On the surface - if you are not serious about documentation - it might seem like some revelation. "Oh, I can write down roughly what the hell is going on and that will <em>help</em> the agent??". To me, the idea of docs in a single file is insane unless you're working on something very trivial. I have a docs <em>repo</em>. Any way to config Claude Code (or anything else) to use those docs in the same way?</li>
+<li>To what extent can I make this agnostic cross-agent? I'm most familiar with Claude but I have Codex and Gemini installed and I'd like to keep things flexible such that if I want to switch to Crush (https://github.com/charmbracelet/crush) or OpenCode or something else I'm not building my entire life around Claude.</li>
+<li>Seems like this project might be helpful but also maybe bs in the sense "here's how I [this guy] uses Claude, you do the same". It's marketing it as an OS but...seems like just a bunch of Markdown files? https://github.com/buildermethods/agent-os</li>
+</ul>
+<h2 id="point-to-docs-tools">point to docs/tools</h2>
+<p>I need a way to bring my documentation + tools (primarily db access) into context for an agent.</p>
+<p>A pretty typical workflow:</p>
+<ul>
+<li>I get a bug report</li>
+<li>figure out what portion(s) of the codebase it touches on</li>
+<li>figure out what tables/records in the database it touches on</li>
+</ul>
+<p>Before going further, let's look at my filesystem and how I've set things up for this client [you can see all this from $CWD but here's an abbreviated/annotated version]:</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> denv</span><span style="color: #6A737D;">  # ignore for now</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> docs</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── agentic</span><span style="color: #6A737D;">  # scripts for Claude to pull data into context</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── eng</span><span style="color: #6A737D;">      # Markdown notes on the codebase, schema, domain, workflows</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── tickets</span><span style="color: #6A737D;">  # Markdown notes on Jira tickets</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── worklogs</span><span style="color: #6A737D;"> # ignore</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">├──</span><span style="color: #032F62;"> src</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── automation</span><span style="color: #6A737D;">  # my org</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └──── rush</span><span style="color: #6A737D;">      # repo where I do all my work for now</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── messaging</span><span style="color: #6A737D;">   # Kafka, RabbitMQ</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">│</span><span style="color: #032F62;">   └── pricing</span><span style="color: #6A737D;">     # ML for pricing markets</span></span></code></pre>
+<p>While it would be helpful to have <code>agentic</code>, <code>eng</code> etc within the repo where I do most of my work (<code>automation/rush</code>), I'm not running the show and the client don't care about | hostile to docs, let alone agentic. So I need to have Claude open with <code>automation/rush</code> <em>but</em> for Claude to know that it can use <code>docs/agentic</code> and <code>docs/eng</code> without me telling Claude every time I start a new session.</p>
+<p>One suggestion I've seen is to set up an MCP server:</p>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="json"><span class="giallo-l"><span>{</span></span>
+<span class="giallo-l"><span style="color: #005CC5;">  &quot;mcpServers&quot;</span><span>: {</span></span>
+<span class="giallo-l"><span style="color: #005CC5;">    &quot;filesystem&quot;</span><span>: {</span></span>
+<span class="giallo-l"><span style="color: #005CC5;">      &quot;command&quot;</span><span>:</span><span style="color: #032F62;"> &quot;npx&quot;</span><span>,</span></span>
+<span class="giallo-l"><span style="color: #005CC5;">      &quot;args&quot;</span><span>: [</span></span>
+<span class="giallo-l"><span style="color: #032F62;">        &quot;-y&quot;</span><span>, </span></span>
+<span class="giallo-l"><span style="color: #032F62;">        &quot;@modelcontextprotocol/server-filesystem&quot;</span><span>,</span></span>
+<span class="giallo-l"><span style="color: #032F62;">        &quot;/Users/zach/Documents/zv/work/kero/docs/agentic&quot;</span><span>,</span></span>
+<span class="giallo-l"><span style="color: #032F62;">        &quot;/Users/zach/Documents/zv/work/kero/docs/eng&quot;</span></span>
+<span class="giallo-l"><span>      ]</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>  }</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
+<p>I don't know much about MCP. Is this the right approach? -&gt; ANSWER! use MCP for fs access to docs/tools + slash commands to address specific tools</p>
+<h2 id="round-pushpin-db">📍 db</h2>
+<ul>
+<li>does MCP even work?</li>
+<li>how do slash commands work bc claude found this unprompted?</li>
+</ul>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">   /tools:run</span><span style="color: #032F62;"> markets 7_37 7_15_4</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">   run</span><span style="color: #032F62;"> tool</span><span> (project)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;"> Do</span><span style="color: #032F62;"> you want to proceed?</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">   1.</span><span style="color: #032F62;"> Yes</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;"> ❯</span><span style="color: #032F62;"> 2. Yes, and don&#39;t ask again for /tools:run markets 7_37 7_15_4 in /Users/zach/Documents/zv/work/kero/src/automation/rush</span></span>
+<span class="giallo-l"><span style="color: #032F62;">   3. Yes, and don&#39;t ask again for /tools:run:</span><span style="color: #005CC5;">*</span><span style="color: #032F62;"> commands in /Users/zach/Documents/zv/work/kero/src/automation/rush</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">   4.</span><span style="color: #032F62;"> No, and tell Claude what to do differently</span><span> (esc)</span></span></code></pre><h2 id="cleanup-scripts">cleanup scripts</h2>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">Your</span><span style="color: #032F62;"> scripts follow clear patterns for debugging betting/market issues:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Script</span><span style="color: #032F62;"> Categories:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Betstop</span><span style="color: #032F62;"> Debugging:</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> debug_betstop_data.py - Explores betstop event structure in PBP/Kafka</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_betstop_markets.py - Analyzes markets around betstop events</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> verify_betstop_fix.py - Validates betstop fixes</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Market</span><span style="color: #032F62;"> Analysis:</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_all_markets.py - Market inventory by prefix/status</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_deleted_markets.py - Tracks deleted markets</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> debug_lac_orl_markets.py - Game-specific market debugging</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> diagnose_markets_config.py - Tests get_mode</span><span>()</span><span style="color: #032F62;"> logic for config issues</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Timeline/Events:</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> get_combined_timeline.py - Core utility - Merges PBP + Kafka logs, sorts by game progression</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_game_timeline.py - Pre-game window analysis</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_event_info_full.py - Complete event metadata</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> compare_events.py - Cross-event comparison</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Code</span><span style="color: #032F62;"> Testing:</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> simulate_pregame_ranking.py - Tests pregame market initialization</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> test_delta_time.py - Time calculation testing</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> test_get_mode.py - Mode detection testing</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Structure</span><span style="color: #032F62;"> Analysis:</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> inspect_pbp_structure.py - PBP record schema exploration</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  -</span><span style="color: #032F62;"> check_test_db.py - Test database validation</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Common</span><span style="color: #032F62;"> Patterns:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  1.</span><span style="color: #032F62;"> MongoDB connections</span><span> (prod/beta</span><span style="color: #032F62;"> with hardcoded creds</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  2.</span><span style="color: #032F62;"> Event-specific queries</span><span> (uses</span><span style="color: #032F62;"> event_id as DB name</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  3.</span><span style="color: #032F62;"> Cross-collection correlation</span><span> (PBP</span><span style="color: #032F62;"> ↔ markets ↔ kafka_activity_log</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  4.</span><span style="color: #032F62;"> Code imports from ml_app/ml/</span><span style="color: #005CC5;">*</span><span style="color: #032F62;"> for integration testing</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  Key</span><span style="color: #032F62;"> Insight:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  get_combined_timeline.py</span><span style="color: #032F62;"> is your reusable library - it&#39;s imported by other scripts and provides the core timeline merging logic that mimics the admin</span></span>
+<span class="giallo-l"><span style="color: #032F62;">  dashboard.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #032F62;">  Recommendations:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #032F62;">  1. Update MCP paths - Add docs/agentic/db/ to your MCP config since scripts moved</span></span>
+<span class="giallo-l"><span style="color: #032F62;">  2. Extract DB credentials - Move to env vars or shared config</span></span>
+<span class="giallo-l"><span style="color: #032F62;">  3. Create helper module - Extract common DB connection logic</span></span>
+<span class="giallo-l"><span style="color: #032F62;">  4. Enhance slash commands - Make /agentic-run suggest scripts based on bug type</span></span>
+<span class="giallo-l"><span style="color: #032F62;">  5. Consider skills - These could become interactive Claude Code skills</span></span></code></pre><h2 id="add-skills">add skills</h2>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;" ><code data-lang="shellscript"><span class="giallo-l"><span style="color: #6F42C1;">my_docs_on_work/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">  agentic/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">    bin/</span><span style="color: #6A737D;">                  # CLIs the agent can call</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      mongo_find</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      mongo_stats</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      diagnose_event</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      dump_markets</span></span>
+<span class="giallo-l"><span style="color: #005CC5;">      ...</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">    config/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      global.json</span><span style="color: #6A737D;">         # read-only DB policy, default behaviors</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      proj_repo_1.json</span><span style="color: #6A737D;">    # env-specific config for work repo</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      proj_repo_2.json</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">    skills/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      bug_triage.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      mongo_queries.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      codebase_navigation.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">    mcp/</span><span style="color: #6A737D;">                  # optional, only if needed</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      mongo-mcp/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">        index.js</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">    workflows/</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      betstop_diagnosis.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      market_anomalies.md</span></span>
+<span class="giallo-l"><span style="color: #6F42C1;">      timeline_sync.md</span></span></code></pre>
+
+
+</main>
+
+</body>
+
+</html>
