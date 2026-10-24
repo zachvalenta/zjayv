@@ -6,6 +6,7 @@ date = 2025-10-27
 cattle: databases, code
 pets: data, context
 
+everyone is scared https://news.ycombinator.com/item?id=50134472 https://news.ycombinator.com/item?id=50118048
 https://news.ycombinator.com/item?id=50207828
 * https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/
 * https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/
